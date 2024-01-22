@@ -149,6 +149,24 @@ const stepperParams = [
     },
   ];
 
+  const laguageMenuOptions = [
+    {
+      codeName: 'DE',
+      option: 'Deutsch',
+      heading: 'Welches Fahrzeug soll versichert werden?'
+    },
+    {
+      codeName: 'FR',
+      option: 'Français',
+      heading: 'Quel véhicule souhaitez-vous assurer?'
+    },
+    {
+      codeName: 'IT',
+      option: 'Italiano',
+      heading: 'Quale veicolo desideri assicurare?'
+    }
+  ]
+
 let testIconCounter = 0;
 
 function passIconCheck() {
@@ -325,6 +343,13 @@ module.exports = {
     checkNextButtonStyles,
     checkPreviousButtonStyles,
     checkSecureDataDisclamer,
+    stepperParams,
+    labelHeadingsText,
+    tooltipsParams,
+    commonAnswers,
+    typeOfUse,
+    laguageMenuOptions,
+    // First test selectors
     stepper,
     stepperSteps: stepper + ' li',
     stepperIcons: stepper + ' li div',
@@ -344,11 +369,8 @@ module.exports = {
     nextButton: 'div.chakra-stack button:first-of-type',
     backButton: 'div.chakra-stack button:last-of-type',
     safeDataMessage: 'p.chakra-text:last-child',
-    stepperParams,
-    labelHeadingsText,
-    tooltipsParams,
-    commonAnswers,
-    typeOfUse,
+
+    //Second test selectors
     brandLabel: '#make-label',
     brandMenuIcon: 'div.fs24-autocomplete-select svg',
     brandInput: 'input[id=":R5di6l9al6f6:"]',
@@ -437,5 +459,10 @@ module.exports = {
     safeUserDataIcon: '#lastStepButton-container ~ div svg',
     stepperPassedFirstStep: 'ul.fs24-stepper > li:first-child div',
     stepperSecondStep: 'ul.fs24-stepper > li:nth-child(2) div',
-    secondPageHeading: 'h2.chakra-heading'
+    secondPageHeading: 'h2.chakra-heading',
+
+    //Third test selectors
+    languageChangeIcon: 'li.fs24-header__language-menu span',
+    languageManu: 'li.fs24-header__language-menu ul',
+    languageManuItems: 'li.fs24-header__language-menu ul li'
 }
