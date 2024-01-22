@@ -20,6 +20,27 @@ const checkedIconSelector= [
     {
         selector: '#priceOfAccessories-label svg'
     },
+    {
+        selector: '#expectedPurchaseYear-label svg'
+    },
+    {
+        selector: 'div.chakra-form-control:nth-of-type(8) #expectedPurchaseYear-label svg'
+    },
+    {
+        selector: '#leasing-label svg'
+    },
+    {
+        selector: '#kilometerPerYear-label svg'
+    },
+    {
+        selector: '#usage-label svg'
+    },
+    {
+        selector: '#registrationCanton-label svg'
+    },
+    {
+        selector: '#garage-label svg'
+    },
 ];
 
 
@@ -95,9 +116,11 @@ const stepperParams = [
       message: 'Wir fragen nach der Fahrleistung, weil diese einen Einfluss auf die Höhe der Versicherungsprämie hat.'
     },
     {
+      type: 'Type of use',
       message: 'Bitte beachte, dass einige Versicherungen keine Onlineangebote für Fahrzeuge mit geschäftlicher Nutzung anbieten.'
     },
     {
+      type: 'Garage',
       message: 'Wir benötigen diese Angabe, um für dich den besten Preis zu ermitteln.'
     },
   ];
@@ -182,7 +205,7 @@ function checkTooltip(tooltipId, messageId, type) {
 }
 
 function checkboxCheckedStylesAndText (checkboxId, textId, expectedText) {
-  cy.get('body').click({force: true}) // click on side, so cypress can reach border values
+  cy.get('body').invoke('show').click({force: true}) // click on side, so cypress can reach border values
   cy.get(checkboxId)
     .should('be.visible')
     .and('have.css', 'background-color', 'rgb(241, 252, 255)')
@@ -250,6 +273,44 @@ function mostCommonAnswersButtonsCheck (buttonsId, params, input) {
     });
   }
 
+  function checkNextButtonStyles (selector, text) {
+    cy.get(selector).should('be.visible')
+      .and('have.text', text)
+      .and('have.css', 'background-color', 'rgb(0, 223, 255)')
+      .and('have.css', 'width', '432px')
+      .and('have.css', 'height', '60px')
+      .and('have.css', 'padding', '0px 16px')
+      .and('have.css', 'color', 'rgb(51, 51, 51)')
+      .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
+      .and('have.css', 'font-size', '18px')
+  }
+
+  function checkPreviousButtonStyles (selector, text) {
+    cy.get(selector).should('be.visible')
+      .and('have.text', text)
+      .and('have.css', 'background-color', 'rgba(0, 0, 0, 0)')
+      .and('have.css', 'width', '432px')
+      .and('have.css', 'height', '60px')
+      .and('have.css', 'padding', '0px 16px')
+      .and('have.css', 'color', 'rgb(51, 51, 51)')
+      .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
+      .and('have.css', 'font-size', '18px')
+  }
+
+  function checkSecureDataDisclamer () {
+    const safeUserDataText ='#lastStepButton-container ~ div p';
+    const safeUserDataIcon = '#lastStepButton-container ~ div svg'
+    cy.get(safeUserDataText).should('be.visible')
+      .and('have.text', 'Deine Daten sind bei uns sicher')
+      .and('have.css', 'color', 'rgb(100, 100, 100)')
+      .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
+      .and('have.css', 'font-size', '14px')
+    cy.get(safeUserDataIcon).should('be.visible')
+      .and('have.css', 'width', '24px')
+      .and('have.css', 'height', '20px')
+      .and('have.css', 'border', '0px solid rgb(51, 51, 51)')
+  }
+
 module.exports = {
     passIconCheck,
     checkFormLabelHedingsStylesAndText,
@@ -261,6 +322,9 @@ module.exports = {
     checkboxPlaceholderCheck,
     textElementsCheck,
     mostCommonAnswersButtonsCheck,
+    checkNextButtonStyles,
+    checkPreviousButtonStyles,
+    checkSecureDataDisclamer,
     stepper,
     stepperSteps: stepper + ' li',
     stepperIcons: stepper + ' li div',
@@ -323,6 +387,11 @@ module.exports = {
     ownVehicleCheckboxSecondOption: 'input[id="radio-:Rammqil9al6f6:"] + span',
     ownVehicleCheckboxYes: '#expectedPurchaseYear-label + div label:first-child',
     ownVehicleCheckboxNo: '#expectedPurchaseYear-label + div label:last-child',
+    expectedPurchaseYearLabel: 'div.chakra-form-control:nth-of-type(8) #expectedPurchaseYear-label',
+    expectedPurchaseYearDropDown: 'div.chakra-form-control:nth-of-type(8) > div > div div:first-child',
+    expectedPurchaseYearDropDownIcon: 'div.chakra-form-control:nth-of-type(8) > div > div svg',
+    expectedPurchaseYearDropDownMenu: 'ul.fs24-dropdown-select__menu-element',
+    expectedPurchaseYearDropDownMenuItem: 'ul.fs24-dropdown-select__menu-element li:nth-child(2)',
     leasingVehicleLabel: '#leasing-label',
     leasingVehicleTooltipButton: '#leasing-label + button',
     leasingVehicleYesText: 'input[id="radio-:R1llmml9al6f6:"] + span + span.chakra-radio__label',
@@ -337,4 +406,36 @@ module.exports = {
     kilometerPerYearTooltipButton: '#kilometerPerYear-label + button',
     kilometerPerYearMostCommonAnswers: 'p.chakra-text:first-child',
     kilometerPerYearMostCommonAnswersButtons: 'p.chakra-text:first-child + div button',
+    usageLabel: '#usage-label',
+    usageTooltipButton: '#usage-label + button',
+    usageCheckboxes: 'span.chakra-checkbox__control',
+    usageCheckboxIcons: 'span.chakra-checkbox__label svg',
+    usageText: 'span.chakra-checkbox__label span',
+    usageCheckedIcon: '#usage-label svg',
+    cantonLabel: '#registrationCanton-label',
+    cantonDropDown: 'div[id=":Rln2l9al6f6:"]',
+    cantonDropDownIcon: 'div[id=":Rln2l9al6f6:"] + div > svg',
+    cantonDropDownMenu: 'div[id=":Rln2l9al6f6:-menu"]',
+    cantonDropDownMenuItem: 'li[id=":Rln2l9al6f6:-item-1"]',
+    garageLabel: '#garage-label',
+    garageTooltipButton: '#garage-label + button',
+    garageCheckboxNoText: 'input[id="radio-:R1lln6l9al6f6:"] + span + span.chakra-radio__label',
+    garageCheckboxYes1Text: 'input[id="radio-:R2lln6l9al6f6:"] + span + span.chakra-radio__label',
+    garageCheckboxYes2Text: 'input[id="radio-:R3lln6l9al6f6:"] + span + span.chakra-radio__label',
+    garageCheckboxYes3Text: 'input[id="radio-:R4lln6l9al6f6:"] + span + span.chakra-radio__label',
+    garageCheckboxOption1: 'input[id="radio-:R1lln6l9al6f6:"] + span',
+    garageCheckboxOption2: 'input[id="radio-:R2lln6l9al6f6:"] + span',
+    garageCheckboxOption3: 'input[id="radio-:R3lln6l9al6f6:"] + span',
+    garageCheckboxOption4: 'input[id="radio-:R4lln6l9al6f6:"] + span',
+    garageCheckbox1: '#garage-label ~ div label.chakra-radio:first-child',
+    garageCheckbox2: '#garage-label ~ div label.chakra-radio:nth-child(2)',
+    garageCheckbox3: '#garage-label ~ div label.chakra-radio:nth-child(3)',
+    garageCheckbox4: '#garage-label ~ div label.chakra-radio:last-child',
+    nextButton: '#lastStepButton-container ~ button:nth-of-type(1)',
+    backButton: '#lastStepButton-container ~ button:nth-of-type(2)',
+    safeUserDataText: '#lastStepButton-container ~ div p',
+    safeUserDataIcon: '#lastStepButton-container ~ div svg',
+    stepperPassedFirstStep: 'ul.fs24-stepper > li:first-child div',
+    stepperSecondStep: 'ul.fs24-stepper > li:nth-child(2) div',
+    secondPageHeading: 'h2.chakra-heading'
 }
