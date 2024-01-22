@@ -295,7 +295,7 @@ function mostCommonAnswersButtonsCheck (buttonsId, params, input) {
     cy.get(selector).should('be.visible')
       .and('have.text', text)
       .and('have.css', 'background-color', 'rgb(0, 223, 255)')
-      .and('have.css', 'width', '432px')
+      .and('have.css', 'width', Cypress.env('device') === 'desktop' ? '432px': '406px')
       .and('have.css', 'height', '60px')
       .and('have.css', 'padding', '0px 16px')
       .and('have.css', 'color', 'rgb(51, 51, 51)')
@@ -307,7 +307,7 @@ function mostCommonAnswersButtonsCheck (buttonsId, params, input) {
     cy.get(selector).should('be.visible')
       .and('have.text', text)
       .and('have.css', 'background-color', 'rgba(0, 0, 0, 0)')
-      .and('have.css', 'width', '432px')
+      .and('have.css', 'width', Cypress.env('device') === 'desktop' ? '432px': '406px')
       .and('have.css', 'height', '60px')
       .and('have.css', 'padding', '0px 16px')
       .and('have.css', 'color', 'rgb(51, 51, 51)')
@@ -349,7 +349,8 @@ module.exports = {
     commonAnswers,
     typeOfUse,
     laguageMenuOptions,
-    // First test selectors
+
+    // Stepper test selectors
     stepper,
     stepperSteps: stepper + ' li',
     stepperIcons: stepper + ' li div',
@@ -370,7 +371,7 @@ module.exports = {
     backButton: 'div.chakra-stack button:last-of-type',
     safeDataMessage: 'p.chakra-text:last-child',
 
-    //Second test selectors
+    // Pass first auto form selectors 
     brandLabel: '#make-label',
     brandMenuIcon: 'div.fs24-autocomplete-select svg',
     brandInput: 'input[id=":R5di6l9al6f6:"]',
@@ -461,8 +462,15 @@ module.exports = {
     stepperSecondStep: 'ul.fs24-stepper > li:nth-child(2) div',
     secondPageHeading: 'h2.chakra-heading',
 
-    //Third test selectors
-    languageChangeIcon: 'li.fs24-header__language-menu span',
+    //Language change test selectors
+    languageChangeMenuCode: Cypress.env('device') === 'desktop' 
+      ? 'li.fs24-header__language-menu span' 
+      : '#main-navigation > li:last-child span',
     languageManu: 'li.fs24-header__language-menu ul',
-    languageManuItems: 'li.fs24-header__language-menu ul li'
+    languageManuItems: Cypress.env('device') === 'desktop'
+      ? 'li.fs24-header__language-menu ul li'
+      : '#main-navigation > li:last-child ul li button',
+    mobileMainManuIcon: 'label[for=mainNavigationButton]',
+    mobileLanguageChangeManu: '#main-navigation > li:last-child',
+    mobileLanguageState: '#main-navigation > li:last-child details',
 }

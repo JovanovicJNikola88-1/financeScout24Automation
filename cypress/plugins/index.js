@@ -10,8 +10,8 @@
     }
     if (device === 'mobile') {
       return {
-        viewportWidth: 375,
-        viewportHeight: 667,
+        viewportWidth: 430,
+        viewportHeight: 932,
         userAgent:
           'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
         isMobile: true,
