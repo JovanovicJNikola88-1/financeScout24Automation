@@ -2,170 +2,212 @@ const inputForm = 'div.chakra-form-control';
 const stepper = 'ul.fs24-stepper';
 
 const checkedIconSelector= [
-    {
-        selector: '#make-label svg'
-    },
-    {
-        selector: '#yearMonthInput-label svg'
-    },
-    {
-        selector: '#vehicleSearchText-label svg'
-    },
-    {
-        selector: '#vehicleSelection-label svg'
-    },
-    {
-        selector: '#mileage-label svg'
-    },
-    {
-        selector: '#priceOfAccessories-label svg'
-    },
-    {
-        selector: '#expectedPurchaseYear-label svg'
-    },
-    {
-        selector: 'div.chakra-form-control:nth-of-type(8) #expectedPurchaseYear-label svg'
-    },
-    {
-        selector: '#leasing-label svg'
-    },
-    {
-        selector: '#kilometerPerYear-label svg'
-    },
-    {
-        selector: '#usage-label svg'
-    },
-    {
-        selector: '#registrationCanton-label svg'
-    },
-    {
-        selector: '#garage-label svg'
-    },
+  {
+      selector: '#make-label svg'
+  },
+  {
+      selector: '#yearMonthInput-label svg'
+  },
+  {
+      selector: '#vehicleSearchText-label svg'
+  },
+  {
+      selector: '#vehicleSelection-label svg'
+  },
+  {
+      selector: '#mileage-label svg'
+  },
+  {
+      selector: '#priceOfAccessories-label svg'
+  },
+  {
+      selector: '#expectedPurchaseYear-label svg'
+  },
+  {
+      selector: 'div.chakra-form-control:nth-of-type(8) #expectedPurchaseYear-label svg'
+  },
+  {
+      selector: '#leasing-label svg'
+  },
+  {
+      selector: '#kilometerPerYear-label svg'
+  },
+  {
+      selector: '#usage-label svg'
+  },
+  {
+      selector: '#registrationCanton-label svg'
+  },
+  {
+      selector: '#garage-label svg'
+  },
 ];
 
-
 const stepperParams = [
-    {
-      stepperText: 'Fahrzeug'
-    },
-    {
-      stepperText: 'Lenker'
-    },
-    {
-      stepperText: 'Deckung'
-    },
-    {
-      stepperText: 'Weiteres'
-    },
-    {
-      stepperText: 'Deine Angebote'
-    },
-  ];
+  {
+    stepperText: 'Fahrzeug'
+  },
+  {
+    stepperText: 'Lenker'
+  },
+  {
+    stepperText: 'Deckung'
+  },
+  {
+    stepperText: 'Weiteres'
+  },
+  {
+    stepperText: 'Deine Angebote'
+  },
+];
   
-  const labelHeadingsText = [
-    {
-      text: 'Marke',
-    },
-    {
-      text: 'Aktueller Kilometerstand',
-    },
-    {
-      text: 'Wert des Zubehörs',
-    },
-    {
-      text: 'Bist du bereits im Besitz des Fahrzeugs?',
-    },
-    {
-      text: 'Hast du das Fahrzeug geleast oder wirst du es leasen?',
-    },
-    {
-      text: 'Deine Fahrleistung pro Jahr in Kilometern',
-    },
-    {
-      text: 'Art der Nutzung',
-    },
-    {
-      text: 'In welchem Kanton hast du das Fahrzeug eingelöst oder wirst du es einlösen?',
-    },
-    {
-      text: 'Kann das Fahrzeug in einer geschlossenen Garage untergebracht werden?',
-    },
-  ];
+const labelHeadingsText = [
+  {
+    text: 'Marke',
+  },
+  {
+    text: 'Aktueller Kilometerstand',
+  },
+  {
+    text: 'Wert des Zubehörs',
+  },
+  {
+    text: 'Bist du bereits im Besitz des Fahrzeugs?',
+  },
+  {
+    text: 'Hast du das Fahrzeug geleast oder wirst du es leasen?',
+  },
+  {
+    text: 'Deine Fahrleistung pro Jahr in Kilometern',
+  },
+  {
+    text: 'Art der Nutzung',
+  },
+  {
+    text: 'In welchem Kanton hast du das Fahrzeug eingelöst oder wirst du es einlösen?',
+  },
+  {
+    text: 'Kann das Fahrzeug in einer geschlossenen Garage untergebracht werden?',
+  },
+];
   
-  const tooltipsParams = [
-    {
-      type: 'Place on market',
-      message: 'Das Datum findest du im Feld 36 im Fahrzeugausweis.'
-    },
-    {
-      type: 'Model and type',
-      message: 'Die Typengenehmigung findest du an Position 24 im Fahrzeugausweis.'
-    },
-    {
-      type: 'Value of accessories',
-      message: 'Der Wert des Zubehörs beträgt in der Regel 10 % des Listenpreises.' 
-      + ' Wenn du ein Modell ausgewählt hast, berechnen wir dir automatisch diesen Wert.' 
-      + ' Du kannst ihn jedoch anpassen.'
-    },
-    {
-      type: 'Leasing vehicle',
-      message: 'Bitte beachte, dass bei den meisten Leasingverträgen eine Vollkasko-Versicherung obligatorisch ist.'
-    },
-    {
-      type: 'Kilometer per year',
-      message: 'Wir fragen nach der Fahrleistung, weil diese einen Einfluss auf die Höhe der Versicherungsprämie hat.'
-    },
-    {
-      type: 'Type of use',
-      message: 'Bitte beachte, dass einige Versicherungen keine Onlineangebote für Fahrzeuge mit geschäftlicher Nutzung anbieten.'
-    },
-    {
-      type: 'Garage',
-      message: 'Wir benötigen diese Angabe, um für dich den besten Preis zu ermitteln.'
-    },
-  ];
+const tooltipsParams = [
+  {
+    type: 'Place on market',
+    message: 'Das Datum findest du im Feld 36 im Fahrzeugausweis.'
+  },
+  {
+    type: 'Model and type',
+    message: 'Die Typengenehmigung findest du an Position 24 im Fahrzeugausweis.'
+  },
+  {
+    type: 'Value of accessories',
+    message: 'Der Wert des Zubehörs beträgt in der Regel 10 % des Listenpreises.' 
+    + ' Wenn du ein Modell ausgewählt hast, berechnen wir dir automatisch diesen Wert.' 
+    + ' Du kannst ihn jedoch anpassen.'
+  },
+  {
+    type: 'Leasing vehicle',
+    message: 'Bitte beachte, dass bei den meisten Leasingverträgen eine Vollkasko-Versicherung obligatorisch ist.'
+  },
+  {
+    type: 'Kilometer per year',
+    message: 'Wir fragen nach der Fahrleistung, weil diese einen Einfluss auf die Höhe der Versicherungsprämie hat.'
+  },
+  {
+    type: 'Type of use',
+    message: 'Bitte beachte, dass einige Versicherungen keine Onlineangebote für Fahrzeuge mit geschäftlicher Nutzung anbieten.'
+  },
+  {
+    type: 'Garage',
+    message: 'Wir benötigen diese Angabe, um für dich den besten Preis zu ermitteln.'
+  },
+];
 
-  const commonAnswers = [
-    {
-      answer: "10'000 km"
-    },
-    {
-      answer: "15'000 km"
-    },
-    {
-      answer: "20'000 km"
-    },
-  ];
-  
-  const typeOfUse = [
-    {
-      type: 'Privat'
-    },
-    {
-      type: 'Arbeitsweg'
-    },
-    {
-      type: 'Beruflich'
-    },
-  ];
+const commonAnswers = [
+  {
+    answer: "10'000 km"
+  },
+  {
+    answer: "15'000 km"
+  },
+  {
+    answer: "20'000 km"
+  },
+];
 
-  const laguageMenuOptions = [
-    {
-      codeName: 'DE',
-      option: 'Deutsch',
-      heading: 'Welches Fahrzeug soll versichert werden?'
-    },
-    {
-      codeName: 'FR',
-      option: 'Français',
-      heading: 'Quel véhicule souhaitez-vous assurer?'
-    },
-    {
-      codeName: 'IT',
-      option: 'Italiano',
-      heading: 'Quale veicolo desideri assicurare?'
-    }
-  ]
+const typeOfUse = [
+  {
+    type: 'Privat'
+  },
+  {
+    type: 'Arbeitsweg'
+  },
+  {
+    type: 'Beruflich'
+  },
+];
+
+const laguageMenuOptions = [
+  {
+    codeName: 'DE',
+    option: 'Deutsch',
+    heading: 'Welches Fahrzeug soll versichert werden?'
+  },
+  {
+    codeName: 'FR',
+    option: 'Français',
+    heading: 'Quel véhicule souhaitez-vous assurer?'
+  },
+  {
+    codeName: 'IT',
+    option: 'Italiano',
+    heading: 'Quale veicolo desideri assicurare?'
+  }
+];
+
+const requiredFieldValidationMessages = [
+  {
+    selector: '#make-feedback',
+    message: 'Bitte wähle eine Marke'
+  },
+  {
+    selector: '#mileage-feedback',
+    message: 'Bitte gib den aktuellen Kilomenterstand an'
+  },
+  {
+    selector: '#priceOfAccessories-feedback',
+    message: 'Bitte mach Angaben zum Zubehörpreis'
+  },
+  {
+    selector: '#expectedPurchaseYear-feedback',
+    message: 'Bitte mach eine Angabe.'
+  },
+  {
+    selector: '#expectedPurchaseYear-feedback',
+    message: 'Bitte gib das Kaufjahr an.'
+  },
+  {
+    selector: '#leasing-feedback',
+    message: 'Bitte gib an, ob das Fahrzeug geleast wird'
+  },
+  {
+    selector: '#kilometerPerYear-feedback',
+    message: 'Bitte mach Angaben zur Fahrleistung'
+  },
+  {
+    selector: '#usage-label ~ div p',
+    message: 'Bitte mach Angaben zur Fahrzeugnutzung'
+  },
+  {
+    selector: '#registrationCanton-feedback',
+    message: 'Bitte wähle den Zulassungskanton'
+  },
+  {
+    selector: '#garage-feedback',
+    message: 'Bitte wähle die zutreffende Option'
+  },
+];
 
 let testIconCounter = 0;
 
@@ -330,147 +372,149 @@ function mostCommonAnswersButtonsCheck (buttonsId, params, input) {
   }
 
 module.exports = {
-    passIconCheck,
-    checkFormLabelHedingsStylesAndText,
-    dropDownIconStyles,
-    clearIconStyles,
-    checkTooltip,
-    checkboxCheckedStylesAndText,
-    inputElementPlaceholderCheck,
-    checkboxPlaceholderCheck,
-    textElementsCheck,
-    mostCommonAnswersButtonsCheck,
-    checkNextButtonStyles,
-    checkPreviousButtonStyles,
-    checkSecureDataDisclamer,
-    stepperParams,
-    labelHeadingsText,
-    tooltipsParams,
-    commonAnswers,
-    typeOfUse,
-    laguageMenuOptions,
+  // test functions and parameters
+  passIconCheck,
+  checkFormLabelHedingsStylesAndText,
+  dropDownIconStyles,
+  clearIconStyles,
+  checkTooltip,
+  checkboxCheckedStylesAndText,
+  inputElementPlaceholderCheck,
+  checkboxPlaceholderCheck,
+  textElementsCheck,
+  mostCommonAnswersButtonsCheck,
+  checkNextButtonStyles,
+  checkPreviousButtonStyles,
+  checkSecureDataDisclamer,
+  stepperParams,
+  labelHeadingsText,
+  tooltipsParams,
+  commonAnswers,
+  typeOfUse,
+  laguageMenuOptions,
+  requiredFieldValidationMessages,
 
-    // Stepper test selectors
-    stepper,
-    stepperSteps: stepper + ' li',
-    stepperIcons: stepper + ' li div',
-    stepperText: stepper + ' li p',
-    inputForm,
-    hedingText: 'h2:first-child',
-    labelHeadings: inputForm + ' > label',
-    inputFields: inputForm + ' > div > div > input',
-    inputLeftElement: 'div.chakra-input__left-element',
-    radioFields: inputForm + ' > div > div[role=radiogroup] > label',
-    radioFieldLabels: 'span.chakra-radio__label',
-    tooltipsButtons: inputForm + ' button',
-    tooltipsMessages: 'div[id*="tooltip"]',
-    mostCommonAnswerHeadings: 'p.chakra-text:first-child',
-    mostCommonAnswerButtons: 'form > div:nth-child(6) div:nth-child(2) button',
-    typeOfUseCheckboxes: 'div.chakra-form-control:nth-child(7) div.chakra-stack > label div',
-    nextButton: 'div.chakra-stack button:first-of-type',
-    backButton: 'div.chakra-stack button:last-of-type',
-    safeDataMessage: 'p.chakra-text:last-child',
+  // Stepper test selectors
+  stepper,
+  stepperSteps: stepper + ' li',
+  stepperIcons: stepper + ' li div',
+  stepperText: stepper + ' li p',
+  inputForm,
+  hedingText: 'h2:first-child',
+  labelHeadings: inputForm + ' > label',
+  inputFields: inputForm + ' > div > div > input',
+  inputLeftElement: 'div.chakra-input__left-element',
+  radioFields: inputForm + ' > div > div[role=radiogroup] > label',
+  radioFieldLabels: 'span.chakra-radio__label',
+  tooltipsButtons: inputForm + ' button',
+  tooltipsMessages: 'div[id*="tooltip"]',
+  mostCommonAnswerHeadings: 'p.chakra-text:first-child',
+  mostCommonAnswerButtons: 'form > div:nth-child(6) div:nth-child(2) button',
+  typeOfUseCheckboxes: 'div.chakra-form-control:nth-child(7) div.chakra-stack > label div',
+  nextButton: 'div.chakra-stack button:first-of-type',
+  backButton: 'div.chakra-stack button:last-of-type',
+  safeDataMessage: 'p.chakra-text:last-child',
 
-    // Pass first auto form selectors 
-    brandLabel: '#make-label',
-    brandMenuIcon: 'div.fs24-autocomplete-select svg',
-    brandInput: 'input[id=":R5di6l9al6f6:"]',
-    brandFromList: 'div[id=":R5di6l9al6f6:-menu"] li:first-child',
-    placeOnMarket: 'form > div:nth-child(2)',
-    pomLabel: '#yearMonthInput-label span',
-    pomYearDropDownIcon: 'div[id=":re:"] + div > svg',
-    pomTooltipButton: 'form > div:nth-child(2) button',
-    pomFirstRegistrationYearLabel: '#firstRegistrationYear-label',
-    pomFirstRegistrationYearDropDown: 'div[id=":re:"]',
-    pomFirstRegistrationYearMenu: 'div[id=":re:-menu"]',
-    pomFirstRegistrationYearMenuItem: 'li[id=":re:-item-1"]',
-    pomMonthDropDownIcon: 'div[id=":rj:"] + div > svg',
-    pomFirstRegistrationMonthLabel: '#firstRegistrationMonth-label',
-    pomFirstRegistrationMonthDropDown: 'div[id=":rj:"]',
-    pomFirstRegistrationMonthMenu: 'div[id=":rj:-menu"]',
-    pomFirstRegistrationMonthMenuItem: 'li[id=":rj:-item-1"]',
-    modelAndType: '#vehicleSearchText-label span',
-    matTooltipButton: 'form > div:nth-child(3) button',
-    matInput: '#vehicleSearchText',
-    matModel: '#react-autowhatever-1--item-0',
-    selectVehicleLabel: '#vehicleSelection-label',
-    selectVehicleInput: 'div.chakra-form-control:nth-of-type(4) label.chakra-radio',
-    selectVehicleInputText: 'div.chakra-form-control:nth-of-type(4) label.chakra-radio span.chakra-radio__label',
-    currentMilageLabel: '#mileage-label',
-    currentMilageInput: '#mileage',
-    currentMilageRightText: '#mileage-label + div div.chakra-input__right-element',
-    valueOfAccessoryLabel: '#priceOfAccessories-label',
-    valueOfAccessoryInput: '#priceOfAccessories',
-    valueOfAccessoryLeftText: '#priceOfAccessories-label + button + div div.chakra-input__left-element',
-    valueOfAccessoryTooltipButton: '#priceOfAccessories-label + button',
-    ownVehicleCheckboxLabel: '#expectedPurchaseYear-label',
-    ownVehicleCheckboxYesText: 'input[id="radio-:R6mmqil9al6f6:"] + span + span.chakra-radio__label',
-    ownVehicleCheckboxNoText: 'input[id="radio-:Rammqil9al6f6:"] + span + span.chakra-radio__label',
-    ownVehicleCheckboxFirstOption: 'input[id="radio-:R6mmqil9al6f6:"] + span',
-    ownVehicleCheckboxSecondOption: 'input[id="radio-:Rammqil9al6f6:"] + span',
-    ownVehicleCheckboxYes: '#expectedPurchaseYear-label + div label:first-child',
-    ownVehicleCheckboxNo: '#expectedPurchaseYear-label + div label:last-child',
-    expectedPurchaseYearLabel: 'div.chakra-form-control:nth-of-type(8) #expectedPurchaseYear-label',
-    expectedPurchaseYearDropDown: 'div.chakra-form-control:nth-of-type(8) > div > div div:first-child',
-    expectedPurchaseYearDropDownIcon: 'div.chakra-form-control:nth-of-type(8) > div > div svg',
-    expectedPurchaseYearDropDownMenu: 'ul.fs24-dropdown-select__menu-element',
-    expectedPurchaseYearDropDownMenuItem: 'ul.fs24-dropdown-select__menu-element li:nth-child(2)',
-    leasingVehicleLabel: '#leasing-label',
-    leasingVehicleTooltipButton: '#leasing-label + button',
-    leasingVehicleYesText: 'input[id="radio-:R1llmml9al6f6:"] + span + span.chakra-radio__label',
-    leasingVehicleNoText: 'input[id="radio-:R2llmml9al6f6:"] + span + span.chakra-radio__label',
-    leasingVehicleCheckboxFirstOption: 'input[id="radio-:R1llmml9al6f6:"] + span',
-    leasingVehicleCheckboxSecondOption: 'input[id="radio-:R2llmml9al6f6:"] + span',
-    leasingVehicleCheckboxYes: '#leasing-label + button + div label:first-child',
-    leasingVehicleCheckboxNo: '#leasing-label + button + div label:last-child',
-    kilometerPerYearLabel: '#kilometerPerYear-label',
-    kilometerPerYearInput: '#kilometerPerYear',
-    kilometerPerYearRightText: '#kilometerPerYear-label + button + div div.chakra-input__right-element',
-    kilometerPerYearTooltipButton: '#kilometerPerYear-label + button',
-    kilometerPerYearMostCommonAnswers: 'p.chakra-text:first-child',
-    kilometerPerYearMostCommonAnswersButtons: 'p.chakra-text:first-child + div button',
-    usageLabel: '#usage-label',
-    usageTooltipButton: '#usage-label + button',
-    usageCheckboxes: 'span.chakra-checkbox__control',
-    usageCheckboxIcons: 'span.chakra-checkbox__label svg',
-    usageText: 'span.chakra-checkbox__label span',
-    usageCheckedIcon: '#usage-label svg',
-    cantonLabel: '#registrationCanton-label',
-    cantonDropDown: 'div[id=":Rln2l9al6f6:"]',
-    cantonDropDownIcon: 'div[id=":Rln2l9al6f6:"] + div > svg',
-    cantonDropDownMenu: 'div[id=":Rln2l9al6f6:-menu"]',
-    cantonDropDownMenuItem: 'li[id=":Rln2l9al6f6:-item-1"]',
-    garageLabel: '#garage-label',
-    garageTooltipButton: '#garage-label + button',
-    garageCheckboxNoText: 'input[id="radio-:R1lln6l9al6f6:"] + span + span.chakra-radio__label',
-    garageCheckboxYes1Text: 'input[id="radio-:R2lln6l9al6f6:"] + span + span.chakra-radio__label',
-    garageCheckboxYes2Text: 'input[id="radio-:R3lln6l9al6f6:"] + span + span.chakra-radio__label',
-    garageCheckboxYes3Text: 'input[id="radio-:R4lln6l9al6f6:"] + span + span.chakra-radio__label',
-    garageCheckboxOption1: 'input[id="radio-:R1lln6l9al6f6:"] + span',
-    garageCheckboxOption2: 'input[id="radio-:R2lln6l9al6f6:"] + span',
-    garageCheckboxOption3: 'input[id="radio-:R3lln6l9al6f6:"] + span',
-    garageCheckboxOption4: 'input[id="radio-:R4lln6l9al6f6:"] + span',
-    garageCheckbox1: '#garage-label ~ div label.chakra-radio:first-child',
-    garageCheckbox2: '#garage-label ~ div label.chakra-radio:nth-child(2)',
-    garageCheckbox3: '#garage-label ~ div label.chakra-radio:nth-child(3)',
-    garageCheckbox4: '#garage-label ~ div label.chakra-radio:last-child',
-    nextButton: '#lastStepButton-container ~ button:nth-of-type(1)',
-    backButton: '#lastStepButton-container ~ button:nth-of-type(2)',
-    safeUserDataText: '#lastStepButton-container ~ div p',
-    safeUserDataIcon: '#lastStepButton-container ~ div svg',
-    stepperPassedFirstStep: 'ul.fs24-stepper > li:first-child div',
-    stepperSecondStep: 'ul.fs24-stepper > li:nth-child(2) div',
-    secondPageHeading: 'h2.chakra-heading',
+  // First auto form selectors 
+  brandLabel: '#make-label',
+  brandMenuIcon: 'div.fs24-autocomplete-select svg',
+  brandInput: 'input[id=":R5di6l9al6f6:"]',
+  brandFromList: 'div[id=":R5di6l9al6f6:-menu"] li:first-child',
+  placeOnMarket: 'form > div:nth-child(2)',
+  pomLabel: '#yearMonthInput-label span',
+  pomYearDropDownIcon: 'div[id=":re:"] + div > svg',
+  pomTooltipButton: 'form > div:nth-child(2) button',
+  pomFirstRegistrationYearLabel: '#firstRegistrationYear-label',
+  pomFirstRegistrationYearDropDown: 'div[id=":re:"]',
+  pomFirstRegistrationYearMenu: 'div[id=":re:-menu"]',
+  pomFirstRegistrationYearMenuItem: 'li[id=":re:-item-1"]',
+  pomMonthDropDownIcon: 'div[id=":rj:"] + div > svg',
+  pomFirstRegistrationMonthLabel: '#firstRegistrationMonth-label',
+  pomFirstRegistrationMonthDropDown: 'div[id=":rj:"]',
+  pomFirstRegistrationMonthMenu: 'div[id=":rj:-menu"]',
+  pomFirstRegistrationMonthMenuItem: 'li[id=":rj:-item-1"]',
+  modelAndType: '#vehicleSearchText-label span',
+  matTooltipButton: 'form > div:nth-child(3) button',
+  matInput: '#vehicleSearchText',
+  matModel: '#react-autowhatever-1--item-0',
+  selectVehicleLabel: '#vehicleSelection-label',
+  selectVehicleInput: 'div.chakra-form-control:nth-of-type(4) label.chakra-radio',
+  selectVehicleInputText: 'div.chakra-form-control:nth-of-type(4) label.chakra-radio span.chakra-radio__label',
+  currentMilageLabel: '#mileage-label',
+  currentMilageInput: '#mileage',
+  currentMilageRightText: '#mileage-label + div div.chakra-input__right-element',
+  valueOfAccessoryLabel: '#priceOfAccessories-label',
+  valueOfAccessoryInput: '#priceOfAccessories',
+  valueOfAccessoryLeftText: '#priceOfAccessories-label + button + div div.chakra-input__left-element',
+  valueOfAccessoryTooltipButton: '#priceOfAccessories-label + button',
+  ownVehicleCheckboxLabel: '#expectedPurchaseYear-label',
+  ownVehicleCheckboxYesText: 'input[id="radio-:R6mmqil9al6f6:"] + span + span.chakra-radio__label',
+  ownVehicleCheckboxNoText: 'input[id="radio-:Rammqil9al6f6:"] + span + span.chakra-radio__label',
+  ownVehicleCheckboxFirstOption: 'input[id="radio-:R6mmqil9al6f6:"] + span',
+  ownVehicleCheckboxSecondOption: 'input[id="radio-:Rammqil9al6f6:"] + span',
+  ownVehicleCheckboxYes: '#expectedPurchaseYear-label + div label:first-child',
+  ownVehicleCheckboxNo: '#expectedPurchaseYear-label + div label:last-child',
+  expectedPurchaseYearLabel: 'div.chakra-form-control:nth-of-type(8) #expectedPurchaseYear-label',
+  expectedPurchaseYearDropDown: 'div.chakra-form-control:nth-of-type(8) > div > div div:first-child',
+  expectedPurchaseYearDropDownIcon: 'div.chakra-form-control:nth-of-type(8) > div > div svg',
+  expectedPurchaseYearDropDownMenu: 'ul.fs24-dropdown-select__menu-element',
+  expectedPurchaseYearDropDownMenuItem: 'ul.fs24-dropdown-select__menu-element li:nth-child(2)',
+  leasingVehicleLabel: '#leasing-label',
+  leasingVehicleTooltipButton: '#leasing-label + button',
+  leasingVehicleYesText: 'input[id="radio-:R1llmml9al6f6:"] + span + span.chakra-radio__label',
+  leasingVehicleNoText: 'input[id="radio-:R2llmml9al6f6:"] + span + span.chakra-radio__label',
+  leasingVehicleCheckboxFirstOption: 'input[id="radio-:R1llmml9al6f6:"] + span',
+  leasingVehicleCheckboxSecondOption: 'input[id="radio-:R2llmml9al6f6:"] + span',
+  leasingVehicleCheckboxYes: '#leasing-label + button + div label:first-child',
+  leasingVehicleCheckboxNo: '#leasing-label + button + div label:last-child',
+  kilometerPerYearLabel: '#kilometerPerYear-label',
+  kilometerPerYearInput: '#kilometerPerYear',
+  kilometerPerYearRightText: '#kilometerPerYear-label + button + div div.chakra-input__right-element',
+  kilometerPerYearTooltipButton: '#kilometerPerYear-label + button',
+  kilometerPerYearMostCommonAnswers: 'p.chakra-text:first-child',
+  kilometerPerYearMostCommonAnswersButtons: 'p.chakra-text:first-child + div button',
+  usageLabel: '#usage-label',
+  usageTooltipButton: '#usage-label + button',
+  usageCheckboxes: 'span.chakra-checkbox__control',
+  usageCheckboxIcons: 'span.chakra-checkbox__label svg',
+  usageText: 'span.chakra-checkbox__label span',
+  usageCheckedIcon: '#usage-label svg',
+  cantonLabel: '#registrationCanton-label',
+  cantonDropDown: 'div[id=":Rln2l9al6f6:"]',
+  cantonDropDownIcon: 'div[id=":Rln2l9al6f6:"] + div > svg',
+  cantonDropDownMenu: 'div[id=":Rln2l9al6f6:-menu"]',
+  cantonDropDownMenuItem: 'li[id=":Rln2l9al6f6:-item-1"]',
+  garageLabel: '#garage-label',
+  garageTooltipButton: '#garage-label + button',
+  garageCheckboxNoText: 'input[id="radio-:R1lln6l9al6f6:"] + span + span.chakra-radio__label',
+  garageCheckboxYes1Text: 'input[id="radio-:R2lln6l9al6f6:"] + span + span.chakra-radio__label',
+  garageCheckboxYes2Text: 'input[id="radio-:R3lln6l9al6f6:"] + span + span.chakra-radio__label',
+  garageCheckboxYes3Text: 'input[id="radio-:R4lln6l9al6f6:"] + span + span.chakra-radio__label',
+  garageCheckboxOption1: 'input[id="radio-:R1lln6l9al6f6:"] + span',
+  garageCheckboxOption2: 'input[id="radio-:R2lln6l9al6f6:"] + span',
+  garageCheckboxOption3: 'input[id="radio-:R3lln6l9al6f6:"] + span',
+  garageCheckboxOption4: 'input[id="radio-:R4lln6l9al6f6:"] + span',
+  garageCheckbox1: '#garage-label ~ div label.chakra-radio:first-child',
+  garageCheckbox2: '#garage-label ~ div label.chakra-radio:nth-child(2)',
+  garageCheckbox3: '#garage-label ~ div label.chakra-radio:nth-child(3)',
+  garageCheckbox4: '#garage-label ~ div label.chakra-radio:last-child',
+  nextButton: '#lastStepButton-container ~ button:nth-of-type(1)',
+  backButton: '#lastStepButton-container ~ button:nth-of-type(2)',
+  safeUserDataText: '#lastStepButton-container ~ div p',
+  safeUserDataIcon: '#lastStepButton-container ~ div svg',
+  stepperPassedFirstStep: 'ul.fs24-stepper > li:first-child div',
+  stepperSecondStep: 'ul.fs24-stepper > li:nth-child(2) div',
+  secondPageHeading: 'h2.chakra-heading',
 
-    //Language change test selectors
-    languageChangeMenuCode: Cypress.env('device') === 'desktop' 
-      ? 'li.fs24-header__language-menu span' 
-      : '#main-navigation > li:last-child span',
-    languageManu: 'li.fs24-header__language-menu ul',
-    languageManuItems: Cypress.env('device') === 'desktop'
-      ? 'li.fs24-header__language-menu ul li'
-      : '#main-navigation > li:last-child ul li button',
-    mobileMainManuIcon: 'label[for=mainNavigationButton]',
-    mobileLanguageChangeManu: '#main-navigation > li:last-child',
-    mobileLanguageState: '#main-navigation > li:last-child details',
+  //Language change test selectors
+  languageChangeMenuCode: Cypress.env('device') === 'desktop' 
+    ? 'li.fs24-header__language-menu span' 
+    : '#main-navigation > li:last-child span',
+  languageManu: 'li.fs24-header__language-menu ul',
+  languageManuItems: Cypress.env('device') === 'desktop'
+    ? 'li.fs24-header__language-menu ul li'
+    : '#main-navigation > li:last-child ul li button',
+  mobileMainManuIcon: 'label[for=mainNavigationButton]',
+  mobileLanguageChangeManu: '#main-navigation > li:last-child',
+  mobileLanguageState: '#main-navigation > li:last-child details',
 }

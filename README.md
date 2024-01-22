@@ -14,5 +14,9 @@ Run tests in headless mode - this will make screenshots if test fails
 ```
 > npx cypress run -b chrome
 ```
+Choose the device option (desktop/mobile)
+```
+cypress.config.js --> env --> device
+```
 ### NOTE
-Before everything, if you don't have, please install [Node.js](https://nodejs.org/en)
+Before everything, please make sure Node.js is installed on your system [Node.js](https://nodejs.org/en)
