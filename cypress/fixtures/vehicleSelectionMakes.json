@@ -1,0 +1,502 @@
+[
+  {
+      "id": 1,
+      "name": "MERCEDES-BENZ",
+      "isFavourite": true
+  },
+  {
+      "id": 2,
+      "name": "VW",
+      "isFavourite": true
+  },
+  {
+      "id": 3,
+      "name": "BMW",
+      "isFavourite": true
+  },
+  {
+      "id": 4,
+      "name": "OPEL",
+      "isFavourite": false
+  },
+  {
+      "id": 5,
+      "name": "FORD",
+      "isFavourite": false
+  },
+  {
+      "id": 6,
+      "name": "VOLVO",
+      "isFavourite": false
+  },
+  {
+      "id": 7,
+      "name": "RENAULT",
+      "isFavourite": false
+  },
+  {
+      "id": 8,
+      "name": "AUDI",
+      "isFavourite": true
+  },
+  {
+      "id": 9,
+      "name": "PEUGEOT",
+      "isFavourite": false
+  },
+  {
+      "id": 10,
+      "name": "CITROEN",
+      "isFavourite": false
+  },
+  {
+      "id": 11,
+      "name": "FIAT",
+      "isFavourite": false
+  },
+  {
+      "id": 12,
+      "name": "SEAT",
+      "isFavourite": false
+  },
+  {
+      "id": 13,
+      "name": "TOYOTA",
+      "isFavourite": false
+  },
+  {
+      "id": 14,
+      "name": "NISSAN",
+      "isFavourite": false
+  },
+  {
+      "id": 15,
+      "name": "SKODA",
+      "isFavourite": true
+  },
+  {
+      "id": 16,
+      "name": "LAND ROVER",
+      "isFavourite": false
+  },
+  {
+      "id": 17,
+      "name": "MAZDA",
+      "isFavourite": false
+  },
+  {
+      "id": 18,
+      "name": "JAGUAR",
+      "isFavourite": false
+  },
+  {
+      "id": 19,
+      "name": "HYUNDAI",
+      "isFavourite": false
+  },
+  {
+      "id": 20,
+      "name": "MITSUBISHI",
+      "isFavourite": false
+  },
+  {
+      "id": 21,
+      "name": "ALFA ROMEO",
+      "isFavourite": false
+  },
+  {
+      "id": 22,
+      "name": "KIA",
+      "isFavourite": false
+  },
+  {
+      "id": 23,
+      "name": "HONDA",
+      "isFavourite": false
+  },
+  {
+      "id": 24,
+      "name": "SUZUKI",
+      "isFavourite": false
+  },
+  {
+      "id": 25,
+      "name": "SUBARU",
+      "isFavourite": false
+  },
+  {
+      "id": 26,
+      "name": "JEEP",
+      "isFavourite": false
+  },
+  {
+      "id": 27,
+      "name": "SAAB",
+      "isFavourite": false
+  },
+  {
+      "id": 28,
+      "name": "DACIA",
+      "isFavourite": false
+  },
+  {
+      "id": 29,
+      "name": "DS AUTOMOBILES",
+      "isFavourite": false
+  },
+  {
+      "id": 30,
+      "name": "PORSCHE",
+      "isFavourite": false
+  },
+  {
+      "id": 31,
+      "name": "CHEVROLET",
+      "isFavourite": false
+  },
+  {
+      "id": 32,
+      "name": "SSANGYONG",
+      "isFavourite": false
+  },
+  {
+      "id": 33,
+      "name": "LANCIA",
+      "isFavourite": false
+  },
+  {
+      "id": 34,
+      "name": "MINI",
+      "isFavourite": false
+  },
+  {
+      "id": 35,
+      "name": "LEXUS",
+      "isFavourite": false
+  },
+  {
+      "id": 36,
+      "name": "INFINITI",
+      "isFavourite": false
+  },
+  {
+      "id": 37,
+      "name": "CADILLAC",
+      "isFavourite": false
+  },
+  {
+      "id": 38,
+      "name": "SMART",
+      "isFavourite": false
+  },
+  {
+      "id": 39,
+      "name": "CHRYSLER",
+      "isFavourite": false
+  },
+  {
+      "id": 40,
+      "name": "DAIHATSU",
+      "isFavourite": false
+  },
+  {
+      "id": 41,
+      "name": "BMW-ALPINA",
+      "isFavourite": false
+  },
+  {
+      "id": 42,
+      "name": "MASERATI",
+      "isFavourite": false
+  },
+  {
+      "id": 43,
+      "name": "ISUZU",
+      "isFavourite": false
+  },
+  {
+      "id": 44,
+      "name": "LOTUS",
+      "isFavourite": false
+  },
+  {
+      "id": 45,
+      "name": "ROVER",
+      "isFavourite": false
+  },
+  {
+      "id": 46,
+      "name": "BENTLEY",
+      "isFavourite": false
+  },
+  {
+      "id": 47,
+      "name": "ASTON MARTIN",
+      "isFavourite": false
+  },
+  {
+      "id": 48,
+      "name": "DAEWOO",
+      "isFavourite": false
+  },
+  {
+      "id": 49,
+      "name": "LAMBORGHINI",
+      "isFavourite": false
+  },
+  {
+      "id": 50,
+      "name": "PIAGGIO",
+      "isFavourite": false
+  },
+  {
+      "id": 51,
+      "name": "FERRARI",
+      "isFavourite": false
+  },
+  {
+      "id": 52,
+      "name": "GENESIS",
+      "isFavourite": false
+  },
+  {
+      "id": 53,
+      "name": "TESLA",
+      "isFavourite": false
+  },
+  {
+      "id": 54,
+      "name": "CUPRA",
+      "isFavourite": false
+  },
+  {
+      "id": 55,
+      "name": "PUCH",
+      "isFavourite": false
+  },
+  {
+      "id": 56,
+      "name": "AIXAM",
+      "isFavourite": false
+  },
+  {
+      "id": 57,
+      "name": "LADA",
+      "isFavourite": false
+  },
+  {
+      "id": 58,
+      "name": "CATERHAM",
+      "isFavourite": false
+  },
+  {
+      "id": 59,
+      "name": "ROLLS-ROYCE",
+      "isFavourite": false
+  },
+  {
+      "id": 60,
+      "name": "DODGE",
+      "isFavourite": false
+  },
+  {
+      "id": 61,
+      "name": "DFSK",
+      "isFavourite": false
+  },
+  {
+      "id": 62,
+      "name": "MCLAREN",
+      "isFavourite": false
+  },
+  {
+      "id": 63,
+      "name": "MG",
+      "isFavourite": false
+  },
+  {
+      "id": 64,
+      "name": "PONTIAC",
+      "isFavourite": false
+  },
+  {
+      "id": 65,
+      "name": "POLESTAR",
+      "isFavourite": false
+  },
+  {
+      "id": 66,
+      "name": "ALPINE",
+      "isFavourite": false
+  },
+  {
+      "id": 67,
+      "name": "WIESMANN",
+      "isFavourite": false
+  },
+  {
+      "id": 68,
+      "name": "BUICK",
+      "isFavourite": false
+  },
+  {
+      "id": 69,
+      "name": "MORGAN",
+      "isFavourite": false
+  },
+  {
+      "id": 70,
+      "name": "TALBOT",
+      "isFavourite": false
+  },
+  {
+      "id": 71,
+      "name": "HUMMER",
+      "isFavourite": false
+  },
+  {
+      "id": 72,
+      "name": "TVR",
+      "isFavourite": false
+  },
+  {
+      "id": 73,
+      "name": "DAIMLER",
+      "isFavourite": false
+  },
+  {
+      "id": 74,
+      "name": "OLDSMOBILE",
+      "isFavourite": false
+  },
+  {
+      "id": 75,
+      "name": "AUSTIN",
+      "isFavourite": false
+  },
+  {
+      "id": 76,
+      "name": "LIGIER",
+      "isFavourite": false
+  },
+  {
+      "id": 77,
+      "name": "DFM",
+      "isFavourite": false
+  },
+  {
+      "id": 78,
+      "name": "INEOS",
+      "isFavourite": false
+  },
+  {
+      "id": 79,
+      "name": "INNOCENTI",
+      "isFavourite": false
+  },
+  {
+      "id": 80,
+      "name": "MICRO",
+      "isFavourite": false
+  },
+  {
+      "id": 81,
+      "name": "FISKER",
+      "isFavourite": false
+  },
+  {
+      "id": 82,
+      "name": "MAXUS",
+      "isFavourite": false
+  },
+  {
+      "id": 83,
+      "name": "TAZZARI",
+      "isFavourite": false
+  },
+  {
+      "id": 84,
+      "name": "VENTURI",
+      "isFavourite": false
+  },
+  {
+      "id": 85,
+      "name": "AIWAYS",
+      "isFavourite": false
+  },
+  {
+      "id": 86,
+      "name": "ISUZU (J)",
+      "isFavourite": false
+  },
+  {
+      "id": 87,
+      "name": "LUCID",
+      "isFavourite": false
+  },
+  {
+      "id": 88,
+      "name": "SECMA",
+      "isFavourite": false
+  },
+  {
+      "id": 89,
+      "name": "BUGATTI",
+      "isFavourite": false
+  },
+  {
+      "id": 90,
+      "name": "ELARIS",
+      "isFavourite": false
+  },
+  {
+      "id": 91,
+      "name": "IVECO",
+      "isFavourite": false
+  },
+  {
+      "id": 92,
+      "name": "KTM",
+      "isFavourite": false
+  },
+  {
+      "id": 93,
+      "name": "DONKERVOORT",
+      "isFavourite": false
+  },
+  {
+      "id": 94,
+      "name": "HS",
+      "isFavourite": false
+  },
+  {
+      "id": 95,
+      "name": "JAC",
+      "isFavourite": false
+  },
+  {
+      "id": 96,
+      "name": "AMERICAN MOTORS",
+      "isFavourite": false
+  },
+  {
+      "id": 97,
+      "name": "BERTONE",
+      "isFavourite": false
+  },
+  {
+      "id": 98,
+      "name": "DE TOMASO",
+      "isFavourite": false
+  },
+  {
+      "id": 99,
+      "name": "LEVC",
+      "isFavourite": false
+  },
+  {
+      "id": 100,
+      "name": "TATA",
+      "isFavourite": false
+  }
+]

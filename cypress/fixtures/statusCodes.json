@@ -1,0 +1,14 @@
+[
+    {
+        "statusCode": 500
+    },
+    {
+        "statusCode": 400
+    },
+    {
+        "statusCode": 401
+    },
+    {
+        "statusCode": 403
+    } 
+]

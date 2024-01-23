@@ -1,0 +1,2221 @@
+{
+    "cantons": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "AG",
+            "displayName": "Aargau"
+        },
+        {
+            "key": 2,
+            "name": "AI",
+            "displayName": "Appenzell Inner-Rhodes"
+        },
+        {
+            "key": 3,
+            "name": "AR",
+            "displayName": "Appenzell Outer-Rhodes"
+        },
+        {
+            "key": 4,
+            "name": "BE",
+            "displayName": "Bern"
+        },
+        {
+            "key": 5,
+            "name": "BL",
+            "displayName": "Basel District"
+        },
+        {
+            "key": 6,
+            "name": "BS",
+            "displayName": "Basel"
+        },
+        {
+            "key": 7,
+            "name": "FR",
+            "displayName": "Fribourg"
+        },
+        {
+            "key": 8,
+            "name": "GE",
+            "displayName": "Geneva"
+        },
+        {
+            "key": 9,
+            "name": "GL",
+            "displayName": "Glarus"
+        },
+        {
+            "key": 10,
+            "name": "GR",
+            "displayName": "Grisons"
+        },
+        {
+            "key": 11,
+            "name": "JU",
+            "displayName": "Jura"
+        },
+        {
+            "key": 12,
+            "name": "LU",
+            "displayName": "Lucerne"
+        },
+        {
+            "key": 13,
+            "name": "NE",
+            "displayName": "Neuchâtel"
+        },
+        {
+            "key": 14,
+            "name": "NW",
+            "displayName": "Nidwalden"
+        },
+        {
+            "key": 15,
+            "name": "OW",
+            "displayName": "Obwalden"
+        },
+        {
+            "key": 16,
+            "name": "SG",
+            "displayName": "St Gallen"
+        },
+        {
+            "key": 17,
+            "name": "SH",
+            "displayName": "Schaffhausen"
+        },
+        {
+            "key": 18,
+            "name": "SO",
+            "displayName": "Solothurn"
+        },
+        {
+            "key": 19,
+            "name": "SZ",
+            "displayName": "Schwyz"
+        },
+        {
+            "key": 20,
+            "name": "TG",
+            "displayName": "Thurgau"
+        },
+        {
+            "key": 21,
+            "name": "TI",
+            "displayName": "Ticino"
+        },
+        {
+            "key": 22,
+            "name": "UR",
+            "displayName": "Uri"
+        },
+        {
+            "key": 23,
+            "name": "VD",
+            "displayName": "Vaud"
+        },
+        {
+            "key": 24,
+            "name": "VS",
+            "displayName": "Valais"
+        },
+        {
+            "key": 25,
+            "name": "ZG",
+            "displayName": "Zug"
+        },
+        {
+            "key": 26,
+            "name": "ZH",
+            "displayName": "Zurich"
+        }
+    ],
+    "genders": [
+        {
+            "key": 1,
+            "name": "Male",
+            "displayName": "Male"
+        },
+        {
+            "key": 2,
+            "name": "Female",
+            "displayName": "Female"
+        }
+    ],
+    "countries": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 4,
+            "name": "AF",
+            "displayName": "Afghanistan"
+        },
+        {
+            "key": 8,
+            "name": "AL",
+            "displayName": "Albania"
+        },
+        {
+            "key": 10,
+            "name": "AQ",
+            "displayName": "Antarctica"
+        },
+        {
+            "key": 12,
+            "name": "DZ",
+            "displayName": "Algeria"
+        },
+        {
+            "key": 16,
+            "name": "AS",
+            "displayName": "American Samoa"
+        },
+        {
+            "key": 20,
+            "name": "AD",
+            "displayName": "Andorra"
+        },
+        {
+            "key": 24,
+            "name": "AO",
+            "displayName": "Angola"
+        },
+        {
+            "key": 28,
+            "name": "AG",
+            "displayName": "Antigua and Barbuda"
+        },
+        {
+            "key": 31,
+            "name": "AZ",
+            "displayName": "Azerbaijan"
+        },
+        {
+            "key": 32,
+            "name": "AR",
+            "displayName": "Argentina"
+        },
+        {
+            "key": 36,
+            "name": "AU",
+            "displayName": "Australia"
+        },
+        {
+            "key": 40,
+            "name": "AT",
+            "displayName": "Austria"
+        },
+        {
+            "key": 44,
+            "name": "BS",
+            "displayName": "Bahamas"
+        },
+        {
+            "key": 48,
+            "name": "BH",
+            "displayName": "Bahrain"
+        },
+        {
+            "key": 50,
+            "name": "BD",
+            "displayName": "Bangladesh"
+        },
+        {
+            "key": 51,
+            "name": "AM",
+            "displayName": "Armenia"
+        },
+        {
+            "key": 52,
+            "name": "BB",
+            "displayName": "Barbados"
+        },
+        {
+            "key": 56,
+            "name": "BE",
+            "displayName": "Belgium"
+        },
+        {
+            "key": 60,
+            "name": "BM",
+            "displayName": "Bermuda"
+        },
+        {
+            "key": 64,
+            "name": "BT",
+            "displayName": "Bhutan"
+        },
+        {
+            "key": 68,
+            "name": "BO",
+            "displayName": "Bolivia"
+        },
+        {
+            "key": 70,
+            "name": "BA",
+            "displayName": "Bosnia and Herzegovina"
+        },
+        {
+            "key": 72,
+            "name": "BW",
+            "displayName": "Botswana"
+        },
+        {
+            "key": 74,
+            "name": "BV",
+            "displayName": "Bouvet Island"
+        },
+        {
+            "key": 76,
+            "name": "BR",
+            "displayName": "Brazil"
+        },
+        {
+            "key": 84,
+            "name": "BZ",
+            "displayName": "Belize"
+        },
+        {
+            "key": 86,
+            "name": "IO",
+            "displayName": "British Indian Ocean Territory"
+        },
+        {
+            "key": 90,
+            "name": "SB",
+            "displayName": "Solomon Islands"
+        },
+        {
+            "key": 92,
+            "name": "VG",
+            "displayName": "British Virgin Islands"
+        },
+        {
+            "key": 96,
+            "name": "BN",
+            "displayName": "Brunei Darussalam"
+        },
+        {
+            "key": 100,
+            "name": "BG",
+            "displayName": "Bulgaria"
+        },
+        {
+            "key": 104,
+            "name": "MM",
+            "displayName": "Myanmar"
+        },
+        {
+            "key": 108,
+            "name": "BI",
+            "displayName": "Burundi"
+        },
+        {
+            "key": 112,
+            "name": "BY",
+            "displayName": "Belarus"
+        },
+        {
+            "key": 116,
+            "name": "KH",
+            "displayName": "Cambodia"
+        },
+        {
+            "key": 120,
+            "name": "CM",
+            "displayName": "Cameroon"
+        },
+        {
+            "key": 124,
+            "name": "CA",
+            "displayName": "Canada"
+        },
+        {
+            "key": 132,
+            "name": "CV",
+            "displayName": "Cape Verde"
+        },
+        {
+            "key": 136,
+            "name": "KY",
+            "displayName": "Cayman Islands "
+        },
+        {
+            "key": 140,
+            "name": "CF",
+            "displayName": "Central African Republic"
+        },
+        {
+            "key": 144,
+            "name": "LK",
+            "displayName": "Sri Lanka"
+        },
+        {
+            "key": 148,
+            "name": "TD",
+            "displayName": "Chad"
+        },
+        {
+            "key": 152,
+            "name": "CL",
+            "displayName": "Chile"
+        },
+        {
+            "key": 156,
+            "name": "CN",
+            "displayName": "China"
+        },
+        {
+            "key": 158,
+            "name": "TW",
+            "displayName": "Taiwan, Republic of China"
+        },
+        {
+            "key": 162,
+            "name": "CX",
+            "displayName": "Christmas Island"
+        },
+        {
+            "key": 166,
+            "name": "CC",
+            "displayName": "Cocos (Keeling), Islands"
+        },
+        {
+            "key": 170,
+            "name": "CO",
+            "displayName": "Colombia"
+        },
+        {
+            "key": 174,
+            "name": "KM",
+            "displayName": "Comoros"
+        },
+        {
+            "key": 175,
+            "name": "YT",
+            "displayName": "Mayotte"
+        },
+        {
+            "key": 178,
+            "name": "CG",
+            "displayName": "Congo (Brazzaville),"
+        },
+        {
+            "key": 180,
+            "name": "CD",
+            "displayName": "Congo, (Kinshasa),"
+        },
+        {
+            "key": 184,
+            "name": "CK",
+            "displayName": "Cook Islands "
+        },
+        {
+            "key": 188,
+            "name": "CR",
+            "displayName": "Costa Rica"
+        },
+        {
+            "key": 191,
+            "name": "HR",
+            "displayName": "Croatia"
+        },
+        {
+            "key": 192,
+            "name": "CU",
+            "displayName": "Cuba"
+        },
+        {
+            "key": 196,
+            "name": "CY",
+            "displayName": "Cyprus"
+        },
+        {
+            "key": 203,
+            "name": "CZ",
+            "displayName": "Czech Republic"
+        },
+        {
+            "key": 204,
+            "name": "BJ",
+            "displayName": "Benin"
+        },
+        {
+            "key": 208,
+            "name": "DK",
+            "displayName": "Denmark"
+        },
+        {
+            "key": 212,
+            "name": "DM",
+            "displayName": "Dominica"
+        },
+        {
+            "key": 214,
+            "name": "DO",
+            "displayName": "Dominican Republic"
+        },
+        {
+            "key": 218,
+            "name": "EC",
+            "displayName": "Ecuador"
+        },
+        {
+            "key": 222,
+            "name": "SV",
+            "displayName": "El Salvador"
+        },
+        {
+            "key": 226,
+            "name": "GQ",
+            "displayName": "Equatorial Guinea"
+        },
+        {
+            "key": 231,
+            "name": "ET",
+            "displayName": "Ethiopia"
+        },
+        {
+            "key": 232,
+            "name": "ER",
+            "displayName": "Eritrea"
+        },
+        {
+            "key": 233,
+            "name": "EE",
+            "displayName": "Estonia"
+        },
+        {
+            "key": 234,
+            "name": "FO",
+            "displayName": "Faroe Islands"
+        },
+        {
+            "key": 238,
+            "name": "FK",
+            "displayName": "Falkland Islands (Malvinas), "
+        },
+        {
+            "key": 239,
+            "name": "GS",
+            "displayName": "South Georgia and the South Sandwich Islands"
+        },
+        {
+            "key": 242,
+            "name": "FJ",
+            "displayName": "Fiji"
+        },
+        {
+            "key": 246,
+            "name": "FI",
+            "displayName": "Finland"
+        },
+        {
+            "key": 248,
+            "name": "AX",
+            "displayName": "Aland Islands"
+        },
+        {
+            "key": 250,
+            "name": "FR",
+            "displayName": "France"
+        },
+        {
+            "key": 254,
+            "name": "GF",
+            "displayName": "French Guiana"
+        },
+        {
+            "key": 258,
+            "name": "PF",
+            "displayName": "French Polynesia"
+        },
+        {
+            "key": 260,
+            "name": "TF",
+            "displayName": "French Southern Territories"
+        },
+        {
+            "key": 262,
+            "name": "DJ",
+            "displayName": "Djibouti"
+        },
+        {
+            "key": 266,
+            "name": "GA",
+            "displayName": "Gabon"
+        },
+        {
+            "key": 268,
+            "name": "GE",
+            "displayName": "Georgia"
+        },
+        {
+            "key": 270,
+            "name": "GM",
+            "displayName": "Gambia"
+        },
+        {
+            "key": 275,
+            "name": "PS",
+            "displayName": "Palestinian Territory"
+        },
+        {
+            "key": 276,
+            "name": "DE",
+            "displayName": "Germany"
+        },
+        {
+            "key": 288,
+            "name": "GH",
+            "displayName": "Ghana"
+        },
+        {
+            "key": 292,
+            "name": "GI",
+            "displayName": "Gibraltar "
+        },
+        {
+            "key": 296,
+            "name": "KI",
+            "displayName": "Kiribati"
+        },
+        {
+            "key": 300,
+            "name": "GR",
+            "displayName": "Greece"
+        },
+        {
+            "key": 304,
+            "name": "GL",
+            "displayName": "Greenland"
+        },
+        {
+            "key": 308,
+            "name": "GD",
+            "displayName": "Grenada"
+        },
+        {
+            "key": 312,
+            "name": "GP",
+            "displayName": "Guadeloupe"
+        },
+        {
+            "key": 316,
+            "name": "GU",
+            "displayName": "Guam"
+        },
+        {
+            "key": 320,
+            "name": "GT",
+            "displayName": "Guatemala"
+        },
+        {
+            "key": 324,
+            "name": "GN",
+            "displayName": "Guinea"
+        },
+        {
+            "key": 328,
+            "name": "GY",
+            "displayName": "Guyana"
+        },
+        {
+            "key": 332,
+            "name": "HT",
+            "displayName": "Haiti"
+        },
+        {
+            "key": 334,
+            "name": "HM",
+            "displayName": "Heard and Mcdonald Islands"
+        },
+        {
+            "key": 336,
+            "name": "VA",
+            "displayName": "Holy See (Vatican City State),"
+        },
+        {
+            "key": 340,
+            "name": "HN",
+            "displayName": "Honduras"
+        },
+        {
+            "key": 344,
+            "name": "HK",
+            "displayName": "Hong Kong, SAR China"
+        },
+        {
+            "key": 348,
+            "name": "HU",
+            "displayName": "Hungary"
+        },
+        {
+            "key": 352,
+            "name": "IS",
+            "displayName": "Iceland"
+        },
+        {
+            "key": 356,
+            "name": "IN",
+            "displayName": "India"
+        },
+        {
+            "key": 360,
+            "name": "ID",
+            "displayName": "Indonesia"
+        },
+        {
+            "key": 364,
+            "name": "IR",
+            "displayName": "Iran, Islamic Republic of"
+        },
+        {
+            "key": 368,
+            "name": "IQ",
+            "displayName": "Iraq"
+        },
+        {
+            "key": 372,
+            "name": "IE",
+            "displayName": "Ireland"
+        },
+        {
+            "key": 376,
+            "name": "IL",
+            "displayName": "Israel"
+        },
+        {
+            "key": 380,
+            "name": "IT",
+            "displayName": "Italy"
+        },
+        {
+            "key": 384,
+            "name": "CI",
+            "displayName": "Côte d''Ivoire"
+        },
+        {
+            "key": 388,
+            "name": "JM",
+            "displayName": "Jamaica"
+        },
+        {
+            "key": 392,
+            "name": "JP",
+            "displayName": "Japan"
+        },
+        {
+            "key": 398,
+            "name": "KZ",
+            "displayName": "Kazakhstan"
+        },
+        {
+            "key": 400,
+            "name": "JO",
+            "displayName": "Jordan"
+        },
+        {
+            "key": 404,
+            "name": "KE",
+            "displayName": "Kenya"
+        },
+        {
+            "key": 408,
+            "name": "KP",
+            "displayName": "Korea (North),"
+        },
+        {
+            "key": 410,
+            "name": "KR",
+            "displayName": "Korea (South),"
+        },
+        {
+            "key": 411,
+            "name": "XK",
+            "displayName": "Kosovo"
+        },
+        {
+            "key": 414,
+            "name": "KW",
+            "displayName": "Kuwait"
+        },
+        {
+            "key": 417,
+            "name": "KG",
+            "displayName": "Kyrgyzstan"
+        },
+        {
+            "key": 418,
+            "name": "LA",
+            "displayName": "Lao PDR"
+        },
+        {
+            "key": 422,
+            "name": "LB",
+            "displayName": "Lebanon"
+        },
+        {
+            "key": 426,
+            "name": "LS",
+            "displayName": "Lesotho"
+        },
+        {
+            "key": 428,
+            "name": "LV",
+            "displayName": "Latvia"
+        },
+        {
+            "key": 430,
+            "name": "LR",
+            "displayName": "Liberia"
+        },
+        {
+            "key": 434,
+            "name": "LY",
+            "displayName": "Libya"
+        },
+        {
+            "key": 438,
+            "name": "LI",
+            "displayName": "Liechtenstein"
+        },
+        {
+            "key": 440,
+            "name": "LT",
+            "displayName": "Lithuania"
+        },
+        {
+            "key": 442,
+            "name": "LU",
+            "displayName": "Luxembourg"
+        },
+        {
+            "key": 446,
+            "name": "MO",
+            "displayName": "Macao, SAR China"
+        },
+        {
+            "key": 450,
+            "name": "MG",
+            "displayName": "Madagascar"
+        },
+        {
+            "key": 454,
+            "name": "MW",
+            "displayName": "Malawi"
+        },
+        {
+            "key": 458,
+            "name": "MY",
+            "displayName": "Malaysia"
+        },
+        {
+            "key": 462,
+            "name": "MV",
+            "displayName": "Maldives"
+        },
+        {
+            "key": 466,
+            "name": "ML",
+            "displayName": "Mali"
+        },
+        {
+            "key": 470,
+            "name": "MT",
+            "displayName": "Malta"
+        },
+        {
+            "key": 474,
+            "name": "MQ",
+            "displayName": "Martinique"
+        },
+        {
+            "key": 478,
+            "name": "MR",
+            "displayName": "Mauritania"
+        },
+        {
+            "key": 480,
+            "name": "MU",
+            "displayName": "Mauritius"
+        },
+        {
+            "key": 484,
+            "name": "MX",
+            "displayName": "Mexico"
+        },
+        {
+            "key": 492,
+            "name": "MC",
+            "displayName": "Monaco"
+        },
+        {
+            "key": 496,
+            "name": "MN",
+            "displayName": "Mongolia"
+        },
+        {
+            "key": 498,
+            "name": "MD",
+            "displayName": "Moldova"
+        },
+        {
+            "key": 499,
+            "name": "ME",
+            "displayName": "Montenegro"
+        },
+        {
+            "key": 500,
+            "name": "MS",
+            "displayName": "Montserrat"
+        },
+        {
+            "key": 504,
+            "name": "MA",
+            "displayName": "Morocco"
+        },
+        {
+            "key": 508,
+            "name": "MZ",
+            "displayName": "Mozambique"
+        },
+        {
+            "key": 512,
+            "name": "OM",
+            "displayName": "Oman"
+        },
+        {
+            "key": 516,
+            "name": "NA",
+            "displayName": "Namibia"
+        },
+        {
+            "key": 520,
+            "name": "NR",
+            "displayName": "Nauru"
+        },
+        {
+            "key": 524,
+            "name": "NP",
+            "displayName": "Nepal"
+        },
+        {
+            "key": 528,
+            "name": "NL",
+            "displayName": "Netherlands"
+        },
+        {
+            "key": 530,
+            "name": "AN",
+            "displayName": "Netherlands Antilles"
+        },
+        {
+            "key": 533,
+            "name": "AW",
+            "displayName": "Aruba"
+        },
+        {
+            "key": 540,
+            "name": "NC",
+            "displayName": "New Caledonia"
+        },
+        {
+            "key": 548,
+            "name": "VU",
+            "displayName": "Vanuatu"
+        },
+        {
+            "key": 554,
+            "name": "NZ",
+            "displayName": "New Zealand"
+        },
+        {
+            "key": 558,
+            "name": "NI",
+            "displayName": "Nicaragua"
+        },
+        {
+            "key": 562,
+            "name": "NE",
+            "displayName": "Niger"
+        },
+        {
+            "key": 566,
+            "name": "NG",
+            "displayName": "Nigeria"
+        },
+        {
+            "key": 570,
+            "name": "NU",
+            "displayName": "Niue "
+        },
+        {
+            "key": 574,
+            "name": "NF",
+            "displayName": "Norfolk Island"
+        },
+        {
+            "key": 578,
+            "name": "NO",
+            "displayName": "Norway"
+        },
+        {
+            "key": 580,
+            "name": "MP",
+            "displayName": "Northern Mariana Islands"
+        },
+        {
+            "key": 581,
+            "name": "UM",
+            "displayName": "US Minor Outlying Islands"
+        },
+        {
+            "key": 583,
+            "name": "FM",
+            "displayName": "Micronesia, Federated States of"
+        },
+        {
+            "key": 584,
+            "name": "MH",
+            "displayName": "Marshall Islands"
+        },
+        {
+            "key": 585,
+            "name": "PW",
+            "displayName": "Palau"
+        },
+        {
+            "key": 586,
+            "name": "PK",
+            "displayName": "Pakistan"
+        },
+        {
+            "key": 591,
+            "name": "PA",
+            "displayName": "Panama"
+        },
+        {
+            "key": 598,
+            "name": "PG",
+            "displayName": "Papua New Guinea"
+        },
+        {
+            "key": 600,
+            "name": "PY",
+            "displayName": "Paraguay"
+        },
+        {
+            "key": 604,
+            "name": "PE",
+            "displayName": "Peru"
+        },
+        {
+            "key": 608,
+            "name": "PH",
+            "displayName": "Philippines"
+        },
+        {
+            "key": 612,
+            "name": "PN",
+            "displayName": "Pitcairn"
+        },
+        {
+            "key": 616,
+            "name": "PL",
+            "displayName": "Poland"
+        },
+        {
+            "key": 620,
+            "name": "PT",
+            "displayName": "Portugal"
+        },
+        {
+            "key": 624,
+            "name": "GW",
+            "displayName": "Guinea-Bissau"
+        },
+        {
+            "key": 626,
+            "name": "TL",
+            "displayName": "Timor-Leste"
+        },
+        {
+            "key": 630,
+            "name": "PR",
+            "displayName": "Puerto Rico"
+        },
+        {
+            "key": 634,
+            "name": "QA",
+            "displayName": "Qatar"
+        },
+        {
+            "key": 638,
+            "name": "RE",
+            "displayName": "Réunion"
+        },
+        {
+            "key": 642,
+            "name": "RO",
+            "displayName": "Romania"
+        },
+        {
+            "key": 643,
+            "name": "RU",
+            "displayName": "Russian Federation"
+        },
+        {
+            "key": 646,
+            "name": "RW",
+            "displayName": "Rwanda"
+        },
+        {
+            "key": 652,
+            "name": "BL",
+            "displayName": "Saint-Barthélemy"
+        },
+        {
+            "key": 654,
+            "name": "SH",
+            "displayName": "Saint Helena"
+        },
+        {
+            "key": 659,
+            "name": "KN",
+            "displayName": "Saint Kitts and Nevis"
+        },
+        {
+            "key": 660,
+            "name": "AI",
+            "displayName": "Anguilla"
+        },
+        {
+            "key": 662,
+            "name": "LC",
+            "displayName": "Saint Lucia"
+        },
+        {
+            "key": 663,
+            "name": "MF",
+            "displayName": "Saint-Martin (French part),"
+        },
+        {
+            "key": 666,
+            "name": "PM",
+            "displayName": "Saint Pierre and Miquelon "
+        },
+        {
+            "key": 670,
+            "name": "VC",
+            "displayName": "Saint Vincent and Grenadines"
+        },
+        {
+            "key": 674,
+            "name": "SM",
+            "displayName": "San Marino"
+        },
+        {
+            "key": 678,
+            "name": "ST",
+            "displayName": "Sao Tome and Principe"
+        },
+        {
+            "key": 682,
+            "name": "SA",
+            "displayName": "Saudi Arabia"
+        },
+        {
+            "key": 686,
+            "name": "SN",
+            "displayName": "Senegal"
+        },
+        {
+            "key": 688,
+            "name": "RS",
+            "displayName": "Serbia"
+        },
+        {
+            "key": 690,
+            "name": "SC",
+            "displayName": "Seychelles"
+        },
+        {
+            "key": 694,
+            "name": "SL",
+            "displayName": "Sierra Leone"
+        },
+        {
+            "key": 702,
+            "name": "SG",
+            "displayName": "Singapore"
+        },
+        {
+            "key": 703,
+            "name": "SK",
+            "displayName": "Slovakia"
+        },
+        {
+            "key": 704,
+            "name": "VN",
+            "displayName": "Viet Nam"
+        },
+        {
+            "key": 705,
+            "name": "SI",
+            "displayName": "Slovenia"
+        },
+        {
+            "key": 706,
+            "name": "SO",
+            "displayName": "Somalia"
+        },
+        {
+            "key": 710,
+            "name": "ZA",
+            "displayName": "South Africa"
+        },
+        {
+            "key": 716,
+            "name": "ZW",
+            "displayName": "Zimbabwe"
+        },
+        {
+            "key": 724,
+            "name": "ES",
+            "displayName": "Spain"
+        },
+        {
+            "key": 728,
+            "name": "SS",
+            "displayName": "South Sudan"
+        },
+        {
+            "key": 732,
+            "name": "EH",
+            "displayName": "Western Sahara"
+        },
+        {
+            "key": 736,
+            "name": "SD",
+            "displayName": "Sudan"
+        },
+        {
+            "key": 740,
+            "name": "SR",
+            "displayName": "Suriname"
+        },
+        {
+            "key": 744,
+            "name": "SJ",
+            "displayName": "Svalbard and Jan Mayen Islands "
+        },
+        {
+            "key": 748,
+            "name": "SZ",
+            "displayName": "Swaziland"
+        },
+        {
+            "key": 752,
+            "name": "SE",
+            "displayName": "Sweden"
+        },
+        {
+            "key": 756,
+            "name": "CH",
+            "displayName": "Switzerland"
+        },
+        {
+            "key": 760,
+            "name": "SY",
+            "displayName": "Syrian Arab Republic (Syria),"
+        },
+        {
+            "key": 762,
+            "name": "TJ",
+            "displayName": "Tajikistan"
+        },
+        {
+            "key": 764,
+            "name": "TH",
+            "displayName": "Thailand"
+        },
+        {
+            "key": 768,
+            "name": "TG",
+            "displayName": "Togo"
+        },
+        {
+            "key": 772,
+            "name": "TK",
+            "displayName": "Tokelau"
+        },
+        {
+            "key": 776,
+            "name": "TO",
+            "displayName": "Tonga"
+        },
+        {
+            "key": 780,
+            "name": "TT",
+            "displayName": "Trinidad and Tobago"
+        },
+        {
+            "key": 784,
+            "name": "AE",
+            "displayName": "United Arab Emirates"
+        },
+        {
+            "key": 788,
+            "name": "TN",
+            "displayName": "Tunisia"
+        },
+        {
+            "key": 792,
+            "name": "TR",
+            "displayName": "Turkey"
+        },
+        {
+            "key": 795,
+            "name": "TM",
+            "displayName": "Turkmenistan"
+        },
+        {
+            "key": 796,
+            "name": "TC",
+            "displayName": "Turks and Caicos Islands "
+        },
+        {
+            "key": 798,
+            "name": "TV",
+            "displayName": "Tuvalu"
+        },
+        {
+            "key": 800,
+            "name": "UG",
+            "displayName": "Uganda"
+        },
+        {
+            "key": 804,
+            "name": "UA",
+            "displayName": "Ukraine"
+        },
+        {
+            "key": 807,
+            "name": "MK",
+            "displayName": "Macedonia, Republic of"
+        },
+        {
+            "key": 818,
+            "name": "EG",
+            "displayName": "Egypt"
+        },
+        {
+            "key": 826,
+            "name": "GB",
+            "displayName": "United Kingdom"
+        },
+        {
+            "key": 831,
+            "name": "GG",
+            "displayName": "Guernsey"
+        },
+        {
+            "key": 832,
+            "name": "JE",
+            "displayName": "Jersey"
+        },
+        {
+            "key": 833,
+            "name": "IM",
+            "displayName": "Isle of Man "
+        },
+        {
+            "key": 834,
+            "name": "TZ",
+            "displayName": "Tanzania, United Republic of"
+        },
+        {
+            "key": 840,
+            "name": "US",
+            "displayName": "United States of America"
+        },
+        {
+            "key": 850,
+            "name": "VI",
+            "displayName": "Virgin Islands, US"
+        },
+        {
+            "key": 854,
+            "name": "BF",
+            "displayName": "Burkina Faso"
+        },
+        {
+            "key": 858,
+            "name": "UY",
+            "displayName": "Uruguay"
+        },
+        {
+            "key": 860,
+            "name": "UZ",
+            "displayName": "Uzbekistan"
+        },
+        {
+            "key": 862,
+            "name": "VE",
+            "displayName": "Venezuela (Bolivarian Republic),"
+        },
+        {
+            "key": 876,
+            "name": "WF",
+            "displayName": "Wallis and Futuna Islands "
+        },
+        {
+            "key": 882,
+            "name": "WS",
+            "displayName": "Samoa"
+        },
+        {
+            "key": 887,
+            "name": "YE",
+            "displayName": "Yemen"
+        },
+        {
+            "key": 894,
+            "name": "ZM",
+            "displayName": "Zambia"
+        },
+        {
+            "key": 895,
+            "name": "All",
+            "displayName": "All"
+        }
+    ],
+    "residencePermits": [
+        {
+            "key": 6,
+            "name": "PermitB",
+            "displayName": "Residence permit B"
+        },
+        {
+            "key": 7,
+            "name": "PermitC",
+            "displayName": "Residence permit C"
+        },
+        {
+            "key": 10,
+            "name": "PermitL",
+            "displayName": "Residence permit L"
+        }
+    ],
+    "partialCoverCostSharings": [
+        {
+            "key": 1,
+            "name": "0",
+            "displayName": "0"
+        },
+        {
+            "key": 2,
+            "name": "300",
+            "displayName": "300"
+        },
+        {
+            "key": 3,
+            "name": "500",
+            "displayName": "500"
+        },
+        {
+            "key": 4,
+            "name": "1000",
+            "displayName": "1000"
+        }
+    ],
+    "fullyComprehensiveCostSharings": [
+        {
+            "key": 1,
+            "name": "500",
+            "displayName": "500"
+        },
+        {
+            "key": 2,
+            "name": "1000",
+            "displayName": "1000"
+        },
+        {
+            "key": 3,
+            "name": "2000",
+            "displayName": "2000"
+        },
+        {
+            "key": 4,
+            "name": "5000",
+            "displayName": "5000"
+        }
+    ],
+    "carriedThingsInsuranceSums": [
+        {
+            "key": 1,
+            "name": "0",
+            "displayName": "0"
+        },
+        {
+            "key": 2,
+            "name": "2000",
+            "displayName": "2000"
+        },
+        {
+            "key": 3,
+            "name": "3000",
+            "displayName": "3000"
+        },
+        {
+            "key": 4,
+            "name": "4000",
+            "displayName": "4000"
+        }
+    ],
+    "allowances": [
+        {
+            "key": 1,
+            "name": "25",
+            "displayName": "25"
+        },
+        {
+            "key": 2,
+            "name": "30",
+            "displayName": "30"
+        },
+        {
+            "key": 3,
+            "name": "40",
+            "displayName": "40"
+        }
+    ],
+    "insuredPersons": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "Driver",
+            "displayName": "Driver"
+        },
+        {
+            "key": 2,
+            "name": "CoDriver",
+            "displayName": "Co-driver"
+        },
+        {
+            "key": 3,
+            "name": "All",
+            "displayName": "All"
+        }
+    ],
+    "insuredSumsAtDeath": [
+        {
+            "key": 1,
+            "name": "20000",
+            "displayName": "20000"
+        },
+        {
+            "key": 2,
+            "name": "30000",
+            "displayName": "30000"
+        },
+        {
+            "key": 3,
+            "name": "40000",
+            "displayName": "40000"
+        },
+        {
+            "key": 4,
+            "name": "50000",
+            "displayName": "50000"
+        }
+    ],
+    "insuredSumsAtDisability": [
+        {
+            "key": 1,
+            "name": "50000",
+            "displayName": "50000"
+        },
+        {
+            "key": 2,
+            "name": "60000",
+            "displayName": "60000"
+        },
+        {
+            "key": 3,
+            "name": "80000",
+            "displayName": "80000"
+        },
+        {
+            "key": 4,
+            "name": "100000",
+            "displayName": "100000"
+        }
+    ],
+    "languages": [
+        {
+            "key": 2,
+            "name": "de",
+            "displayName": "Deutsch"
+        },
+        {
+            "key": 3,
+            "name": "fr",
+            "displayName": "Français"
+        },
+        {
+            "key": 4,
+            "name": "it",
+            "displayName": "Italiano"
+        }
+    ],
+    "insuranceCompanies": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "NewInCH",
+            "displayName": "New in Switzerland"
+        },
+        {
+            "key": 2,
+            "name": "Allianz",
+            "displayName": "Allianz Suisse"
+        },
+        {
+            "key": 3,
+            "name": "AXA",
+            "displayName": "AXA"
+        },
+        {
+            "key": 4,
+            "name": "Basler",
+            "displayName": "Basler Versicherungen"
+        },
+        {
+            "key": 6,
+            "name": "Mobiliar",
+            "displayName": "Die Mobiliar"
+        },
+        {
+            "key": 7,
+            "name": "Elvia",
+            "displayName": "Elvia"
+        },
+        {
+            "key": 8,
+            "name": "Generali",
+            "displayName": "Generali"
+        },
+        {
+            "key": 9,
+            "name": "Helvetia",
+            "displayName": "Helvetia"
+        },
+        {
+            "key": 10,
+            "name": "smile",
+            "displayName": "smile.direct"
+        },
+        {
+            "key": 11,
+            "name": "TCS",
+            "displayName": "TCS"
+        },
+        {
+            "key": 12,
+            "name": "Vaudoise",
+            "displayName": "Vaudoise"
+        },
+        {
+            "key": 13,
+            "name": "Zuerich",
+            "displayName": "Zürich"
+        },
+        {
+            "key": 14,
+            "name": "Other",
+            "displayName": "Other"
+        },
+        {
+            "key": 15,
+            "name": "NoIns",
+            "displayName": "No Insurance"
+        },
+        {
+            "key": 16,
+            "name": "Dextra",
+            "displayName": "Dextra"
+        }
+    ],
+    "selfInflictedOptions": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "SelfSelf",
+            "displayName": "Drivers fault, Driver paid"
+        },
+        {
+            "key": 2,
+            "name": "OthersSelf",
+            "displayName": "Others fault, Driver paid"
+        },
+        {
+            "key": 3,
+            "name": "SelfIns",
+            "displayName": "Drivers fault, Insurance paid"
+        },
+        {
+            "key": 4,
+            "name": "OthersIns",
+            "displayName": "Others fault, Insurance paid"
+        }
+    ],
+    "claimTypes": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "Liability",
+            "displayName": "Liability"
+        },
+        {
+            "key": 2,
+            "name": "Comprehensive",
+            "displayName": "Comprehensive"
+        }
+    ],
+    "claimCauses": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "CHailDamage",
+            "displayName": "Hail damage"
+        },
+        {
+            "key": 2,
+            "name": "CFireDamage",
+            "displayName": "Fire damage"
+        },
+        {
+            "key": 3,
+            "name": "CTheftOfVehicle",
+            "displayName": "Theft of vehicle"
+        },
+        {
+            "key": 4,
+            "name": "CGlassBreakage",
+            "displayName": "Glass breakage"
+        },
+        {
+            "key": 5,
+            "name": "CCollisionWithAnimal",
+            "displayName": "Collision with animal"
+        },
+        {
+            "key": 6,
+            "name": "CDamageWhileParked",
+            "displayName": "Damage while parked"
+        },
+        {
+            "key": 7,
+            "name": "CAssistance",
+            "displayName": "Assistance"
+        },
+        {
+            "key": 8,
+            "name": "CPassengerAccident",
+            "displayName": "Passenger accident"
+        },
+        {
+            "key": 9,
+            "name": "CCollisionOrFullCascoClaim",
+            "displayName": "Collision or full casco claim"
+        },
+        {
+            "key": 10,
+            "name": "CDamageCausedByMartens",
+            "displayName": "Damage caused by martens"
+        },
+        {
+            "key": 11,
+            "name": "CVandalism",
+            "displayName": "vandalism"
+        },
+        {
+            "key": 12,
+            "name": "CNaturalHazards",
+            "displayName": "Natural hazards"
+        },
+        {
+            "key": 13,
+            "name": "CAlpineHazards",
+            "displayName": "Alpine hazards"
+        },
+        {
+            "key": 14,
+            "name": "LPropertyDamage",
+            "displayName": "Property damage"
+        },
+        {
+            "key": 15,
+            "name": "LBodilyInjury",
+            "displayName": "Bodily injury"
+        },
+        {
+            "key": 16,
+            "name": "LBoth",
+            "displayName": "Both"
+        }
+    ],
+    "claimCausers": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "PolicyHolder",
+            "displayName": "Policy holder"
+        },
+        {
+            "key": 2,
+            "name": "Spouse",
+            "displayName": "Spouse"
+        },
+        {
+            "key": 3,
+            "name": "Children",
+            "displayName": "Children"
+        },
+        {
+            "key": 4,
+            "name": "DeclaredMainDriver",
+            "displayName": "Declared main driver"
+        },
+        {
+            "key": 5,
+            "name": "Employee",
+            "displayName": "Employee"
+        },
+        {
+            "key": 6,
+            "name": "Others",
+            "displayName": "Others"
+        }
+    ],
+    "suspensionPeriods": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "TwoMonths",
+            "displayName": "< 2 months"
+        },
+        {
+            "key": 2,
+            "name": "TwoToThreeMonth",
+            "displayName": "2-3 months"
+        },
+        {
+            "key": 3,
+            "name": "OverThreeMonth",
+            "displayName": ">3 months"
+        }
+    ],
+    "infringementReasons": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "SpeedingOver15KmhOverTheLimit",
+            "displayName": "Speeding > 15km/h over the limit"
+        },
+        {
+            "key": 2,
+            "name": "RefusingBloodTest",
+            "displayName": "Refusing blood test"
+        },
+        {
+            "key": 3,
+            "name": "LossOfControlOverVehicle",
+            "displayName": "Loss of control over vehicle"
+        },
+        {
+            "key": 4,
+            "name": "IgnoringStopSign",
+            "displayName": "Ignoring a stop sign"
+        },
+        {
+            "key": 5,
+            "name": "DrivingWithoutLicense",
+            "displayName": "Driving without a license"
+        },
+        {
+            "key": 6,
+            "name": "IgnoringRedLight",
+            "displayName": "Ignoring the red light"
+        },
+        {
+            "key": 7,
+            "name": "OtherFinesHigher250",
+            "displayName": "Other fines > 250.-"
+        },
+        {
+            "key": 8,
+            "name": "PrisonSentenceForMotoringOffence",
+            "displayName": "Prison sentence for motoring offence"
+        }
+    ],
+    "firstRegistrationReasons": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 1,
+            "name": "new",
+            "displayName": "NewRegistration"
+        },
+        {
+            "key": 2,
+            "name": "change_insurance_vehicle",
+            "displayName": "ChangeInsuranceAndVehicle"
+        },
+        {
+            "key": 3,
+            "name": "change_insurance",
+            "displayName": "ChangeInsurance"
+        },
+        {
+            "key": 4,
+            "name": "unknown",
+            "displayName": "Unknown"
+        }
+    ],
+    "leasingPartners": [
+        {
+            "key": 0,
+            "name": "None",
+            "displayName": "None"
+        },
+        {
+            "key": 40,
+            "name": "auto_interleasing_ag",
+            "displayName": "Auto-Interleasing AG"
+        },
+        {
+            "key": 41,
+            "name": "agco_finance_ag",
+            "displayName": "AGCO Finance AG"
+        },
+        {
+            "key": 42,
+            "name": "ail_swiss_austria_leasing_ag",
+            "displayName": "AIL Swiss-Austria Leasing AG"
+        },
+        {
+            "key": 43,
+            "name": "ald_automotive_ag",
+            "displayName": "ALD Automotive AG"
+        },
+        {
+            "key": 44,
+            "name": "allmeco_leasing_ag",
+            "displayName": "ALLMECO Leasing AG"
+        },
+        {
+            "key": 45,
+            "name": "alphabet_fleet_management_switzerland_ltd",
+            "displayName": "Alphabet Fleet Management Switzerland Ltd."
+        },
+        {
+            "key": 46,
+            "name": "alphera_financial_services",
+            "displayName": "Alphera Financial Services"
+        },
+        {
+            "key": 47,
+            "name": "amag_leasing_ag",
+            "displayName": "AMAG Leasing AG"
+        },
+        {
+            "key": 48,
+            "name": "arval_schweiz_ag",
+            "displayName": "ARVAL (Schweiz) AG"
+        },
+        {
+            "key": 49,
+            "name": "bank_now_ag",
+            "displayName": "Bank-now AG"
+        },
+        {
+            "key": 50,
+            "name": "banque_cantonale_de_geneve",
+            "displayName": "Banque cantonale de Genève"
+        },
+        {
+            "key": 51,
+            "name": "banque_cic_suisse_sa",
+            "displayName": "Banque CIC (Suisse) SA"
+        },
+        {
+            "key": 52,
+            "name": "binelli_and_ehrsam_ag",
+            "displayName": "Binelli & Ehrsam AG"
+        },
+        {
+            "key": 53,
+            "name": "bmw_finanzdienstleistungen_schweiz_ag",
+            "displayName": "BMW Finanzdienstleistungen (Schweiz) AG"
+        },
+        {
+            "key": 54,
+            "name": "bnp_paribas_leasing_solutions_suisse_sa",
+            "displayName": "BNP Paribas Leasing Solutions Suisse SA"
+        },
+        {
+            "key": 55,
+            "name": "cashgate_ag",
+            "displayName": "Cashgate AG"
+        },
+        {
+            "key": 56,
+            "name": "cembra_money_bank_ag",
+            "displayName": "Cembra Money Bank AG"
+        },
+        {
+            "key": 57,
+            "name": "coopera_leasing_ag",
+            "displayName": "CoOpera Leasing AG"
+        },
+        {
+            "key": 58,
+            "name": "credit_suisse",
+            "displayName": "Credit Suisse"
+        },
+        {
+            "key": 59,
+            "name": "dl_location_leasing_sa",
+            "displayName": "DL Location Leasing SA"
+        },
+        {
+            "key": 60,
+            "name": "efl_autoleasing_ag",
+            "displayName": "EFL Autoleasing AG"
+        },
+        {
+            "key": 61,
+            "name": "emil_frey_ag",
+            "displayName": "Emil Frey AG"
+        },
+        {
+            "key": 62,
+            "name": "fca_capital_suisse_sa",
+            "displayName": "FCA Capital Suisse SA"
+        },
+        {
+            "key": 63,
+            "name": "flexikredit_ag",
+            "displayName": "Flexikredit AG"
+        },
+        {
+            "key": 64,
+            "name": "fml_leasing_ag",
+            "displayName": "FML Leasing AG"
+        },
+        {
+            "key": 65,
+            "name": "ford_credit_switzerland_gmbh",
+            "displayName": "Ford Credit (Switzerland) GmbH"
+        },
+        {
+            "key": 66,
+            "name": "ford_credit_europe_fce",
+            "displayName": "Ford Credit Europe (FCE)"
+        },
+        {
+            "key": 67,
+            "name": "fortis_lease_suisse_sa",
+            "displayName": "Fortis Lease Suisse SA"
+        },
+        {
+            "key": 68,
+            "name": "franz_ag",
+            "displayName": "Franz AG"
+        },
+        {
+            "key": 69,
+            "name": "geneve_credit_and_leasing_sa",
+            "displayName": "Genève Crédit & Leasing SA"
+        },
+        {
+            "key": 70,
+            "name": "gmac_suisse_sa",
+            "displayName": "GMAC Suisse SA"
+        },
+        {
+            "key": 71,
+            "name": "honda_suisse_sa",
+            "displayName": "Honda (Suisse) SA"
+        },
+        {
+            "key": 72,
+            "name": "ig_leasing_ag_ex_siemens_leasing_ag",
+            "displayName": "IG Leasing AG (ex Siemens Leasing AG)"
+        },
+        {
+            "key": 73,
+            "name": "iveco_finance_ag",
+            "displayName": "IVECO FINANCE AG"
+        },
+        {
+            "key": 74,
+            "name": "lease_it_ag",
+            "displayName": "lease it ag"
+        },
+        {
+            "key": 75,
+            "name": "lease_plan_schweiz_ag",
+            "displayName": "Lease Plan (Schweiz) AG"
+        },
+        {
+            "key": 76,
+            "name": "leasinvest_ag",
+            "displayName": "Leasinvest AG"
+        },
+        {
+            "key": 77,
+            "name": "maserati_financial_services",
+            "displayName": "Maserati Financial Services"
+        },
+        {
+            "key": 78,
+            "name": "mercedes_benz_financial_services_schweiz_ag",
+            "displayName": "Mercedes-Benz Financial Services Schweiz AG"
+        },
+        {
+            "key": 79,
+            "name": "mf_fleetmanagement_ag",
+            "displayName": "MF Fleetmanagement AG"
+        },
+        {
+            "key": 80,
+            "name": "migros_bank_ag",
+            "displayName": "Migros Bank AG"
+        },
+        {
+            "key": 81,
+            "name": "mobility_solutions_ag",
+            "displayName": "Mobility Solutions AG"
+        },
+        {
+            "key": 82,
+            "name": "multilease_ag_8048_zurich",
+            "displayName": "Multilease AG - 8048 Zürich"
+        },
+        {
+            "key": 83,
+            "name": "nissan_finance",
+            "displayName": "Nissan Finance"
+        },
+        {
+            "key": 84,
+            "name": "pierre_sudan_leasing_und_finanz_ag",
+            "displayName": "Pierre Sudan Leasing und Finanz AG"
+        },
+        {
+            "key": 85,
+            "name": "porsche_financial_services_schweiz_ag",
+            "displayName": "Porsche Financial Services Schweiz AG"
+        },
+        {
+            "key": 86,
+            "name": "psa_finance_suisse_sa",
+            "displayName": "PSA Finance (Suisse) SA"
+        },
+        {
+            "key": 87,
+            "name": "raiffeisen_leasing",
+            "displayName": "Raiffeisen Leasing"
+        },
+        {
+            "key": 88,
+            "name": "rci_finance_sa",
+            "displayName": "RCI Finance SA"
+        },
+        {
+            "key": 89,
+            "name": "revi_leasing_and_finanz_ag",
+            "displayName": "Revi-Leasing & Finanz AG"
+        },
+        {
+            "key": 90,
+            "name": "ubs_leasing_ag",
+            "displayName": "UBS Leasing AG"
+        },
+        {
+            "key": 91,
+            "name": "valiant_bank_ag",
+            "displayName": "Valiant Bank AG"
+        },
+        {
+            "key": 92,
+            "name": "wurth_leasing_ag",
+            "displayName": "Würth Leasing AG"
+        },
+        {
+            "key": 93,
+            "name": "zurcher_kantonalbank_leasing_fsls",
+            "displayName": "Zürcher Kantonalbank Leasing FSLS"
+        }
+    ],
+    "freeGarageChoices": [
+        {
+            "key": 1,
+            "name": "freeGarage",
+            "displayName": "Freie Garagenwahl"
+        },
+        {
+            "key": 2,
+            "name": "partner",
+            "displayName": "Partner-Garage"
+        }
+    ]
+}

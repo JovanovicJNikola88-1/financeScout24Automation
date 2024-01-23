@@ -29,7 +29,7 @@
       return launchOptions;
     });
     config.screenshotsFolder = `reports/mochawesome/screenshots/${config.env.device}`;
-    config.baseUrl = 'https://autoversicherung.financescout24.ch/de/inquiry';
+    config.baseUrl = 'https://autoversicherung.financescout24.ch';
     return Object.assign(
       config,
       deviceConfig(config.env.device),

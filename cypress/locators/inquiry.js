@@ -1,45 +1,42 @@
-const inputForm = 'div.chakra-form-control';
-const stepper = 'ul.fs24-stepper';
-
 const checkedIconSelector= [
   {
-      selector: '#make-label svg'
+    selector: '#make-label svg'
   },
   {
-      selector: '#yearMonthInput-label svg'
+    selector: '#yearMonthInput-label svg'
   },
   {
-      selector: '#vehicleSearchText-label svg'
+    selector: '#vehicleSearchText-label svg'
   },
   {
-      selector: '#vehicleSelection-label svg'
+    selector: '#vehicleSelection-label svg'
   },
   {
-      selector: '#mileage-label svg'
+    selector: '#mileage-label svg'
   },
   {
-      selector: '#priceOfAccessories-label svg'
+    selector: '#priceOfAccessories-label svg'
   },
   {
-      selector: '#expectedPurchaseYear-label svg'
+    selector: '#expectedPurchaseYear-label svg'
   },
   {
-      selector: 'div.chakra-form-control:nth-of-type(8) #expectedPurchaseYear-label svg'
+    selector: 'div.chakra-form-control:nth-of-type(8) #expectedPurchaseYear-label svg'
   },
   {
-      selector: '#leasing-label svg'
+    selector: '#leasing-label svg'
   },
   {
-      selector: '#kilometerPerYear-label svg'
+    selector: '#kilometerPerYear-label svg'
   },
   {
-      selector: '#usage-label svg'
+    selector: '#usage-label svg'
   },
   {
-      selector: '#registrationCanton-label svg'
+    selector: '#registrationCanton-label svg'
   },
   {
-      selector: '#garage-label svg'
+    selector: '#garage-label svg'
   },
 ];
 
@@ -209,6 +206,25 @@ const requiredFieldValidationMessages = [
   },
 ];
 
+// Negative tests parameters
+const inputFieldsCheckParams = [
+  {
+    param: '  '
+  },
+  {
+    param: '!@#$%^&*'
+  },
+  {
+    param: 1237485990
+  },
+  {
+    param: -123485931
+  },
+  {
+    param: 123456789101234567
+  },
+];
+
 let testIconCounter = 0;
 
 function passIconCheck() {
@@ -224,32 +240,32 @@ function passIconCheck() {
 
     testIconCounter++;
   }
-}
+};
 
-function checkFormLabelHedingsStylesAndText (headingId, text) {
+function checkFormLabelHedingsStylesAndText(headingId, text) {
   cy.get(headingId)
     .should('be.visible')
     .and('have.text', text)
     .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
     .and('have.css', 'font-size', '18px')
     .and('have.css', 'color', 'rgb(51, 51, 51)');
-}
+};
 
-function dropDownIconStyles (iconId) {
+function dropDownIconStyles(iconId) {
   cy.get(iconId)
     .should('be.visible')
     .and('have.css', 'width', '24px')
     .and('have.css', 'height', '26px')
-    .and('have.attr', 'class', 'fs24-select__icon')
-}
+    .and('have.attr', 'class', 'fs24-select__icon');
+};
 
-function clearIconStyles (iconId) {
+function clearIconStyles(iconId) {
   cy.get(iconId)
     .should('be.visible')
     .and('have.css', 'width', '24px')
     .and('have.css', 'height', '26px')
-    .and('have.attr', 'class', 'fs24-autocomplete-clear__icon')
-}
+    .and('have.attr', 'class', 'fs24-autocomplete-clear__icon');
+};
 
 function checkTooltip(tooltipId, messageId, type) {
   const tooltipParams = tooltipsParams.find(params => params.type === type);
@@ -262,15 +278,15 @@ function checkTooltip(tooltipId, messageId, type) {
       cy.get(messageId).should('be.visible')
         .and('have.text', tooltipMessage);
     });
-}
+};
 
-function checkboxCheckedStylesAndText (checkboxId, textId, expectedText) {
+function checkboxCheckedStylesAndText(checkboxId, textId, expectedText) {
   cy.get('body').invoke('show').click({force: true}) // click on side, so cypress can reach border values
   cy.get(checkboxId)
     .should('be.visible')
     .and('have.css', 'background-color', 'rgb(241, 252, 255)')
-    .and('have.css', 'border', '2px solid rgb(175, 240, 255)')
-    cy.get(textId)
+    .and('have.css', 'border', '2px solid rgb(175, 240, 255)');
+  cy.get(textId)
     .should('be.visible')
     .invoke('text')
     .then((actualText) => {
@@ -278,10 +294,10 @@ function checkboxCheckedStylesAndText (checkboxId, textId, expectedText) {
       const normalizedActualText = actualText.replace(/\s+/g, ' ').trim();
 
       expect(normalizedActualText).to.equal(normalizedExpectedText);
-  })
-}
+  });
+};
 
-function inputElementPlaceholderCheck (elementId, text) {
+function inputElementPlaceholderCheck(elementId, text) {
   cy.get(elementId)
     .should('be.visible')
     .and('have.css', 'width', '60px')
@@ -289,30 +305,30 @@ function inputElementPlaceholderCheck (elementId, text) {
     .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
     .and('have.css', 'font-size', '18px')
     .and('have.css', 'color', 'rgb(100, 100, 100)')
-    .and('have.text', text)
-}
+    .and('have.text', text);
+};
 
-function checkboxPlaceholderCheck (element, text) {
+function checkboxPlaceholderCheck(element, text) {
   cy.get(element)
     .should('be.visible')
     .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
     .and('have.css', 'font-size', '18px')
     .and('have.css', 'color', 'rgb(51, 51, 51)')
-    .and('have.text', text)
-}
+    .and('have.text', text);
+};
 
-function textElementsCheck (textSelector, text) {
+function textElementsCheck(textSelector, text) {
   cy.get(textSelector)
     .should('be.visible')
     .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
     .and('have.css', 'font-size', '14px')
     .and('have.css', 'color', 'rgb(51, 51, 51)')
-    .and('have.text', text)
-}
+    .and('have.text', text);
+};
 
-function mostCommonAnswersButtonsCheck (buttonsId, params, input) {
+function mostCommonAnswersButtonsCheck(buttonsId, params, input) {
   cy.get(buttonsId)
-   .should('be.visible')
+    .should('be.visible')
     .and('have.length', params.length)
     .each(($button, index) => {
       cy.wrap($button)
@@ -324,52 +340,81 @@ function mostCommonAnswersButtonsCheck (buttonsId, params, input) {
         .and('have.css', 'padding', '8px 12px')
         .and('have.css', 'border', '1px solid rgb(51, 51, 51)')
         .and('have.css', 'border-radius', '24px')
-        .click()
-        cy.get(input).should('be.visible')
-          .and('have.attr', 'value', params[index].answer.split(' ')[0])
-        cy.get($button)
-          .should('have.css', 'border', '1px solid rgb(0, 205, 249)')
-          .and('have.css', 'background-color', 'rgb(241, 252, 255)')
+        .click();
+      cy.get(input).should('be.visible')
+        .and('have.attr', 'value', params[index].answer.split(' ')[0]);
+      cy.get($button)
+        .should('have.css', 'border', '1px solid rgb(0, 205, 249)')
+        .and('have.css', 'background-color', 'rgb(241, 252, 255)');
     });
-  }
+};
 
-  function checkNextButtonStyles (selector, text) {
-    cy.get(selector).should('be.visible')
-      .and('have.text', text)
-      .and('have.css', 'background-color', 'rgb(0, 223, 255)')
-      .and('have.css', 'width', Cypress.env('device') === 'desktop' ? '432px': '406px')
-      .and('have.css', 'height', '60px')
-      .and('have.css', 'padding', '0px 16px')
-      .and('have.css', 'color', 'rgb(51, 51, 51)')
-      .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
-      .and('have.css', 'font-size', '18px')
-  }
+function checkNextButtonStyles(selector, text) {
+  cy.get(selector).should('be.visible')
+    .and('have.text', text)
+    .and('have.css', 'background-color', 'rgb(0, 223, 255)')
+    .and('have.css', 'width', Cypress.env('device') === 'desktop' ? '432px': '406px')
+    .and('have.css', 'height', '60px')
+    .and('have.css', 'padding', '0px 16px')
+    .and('have.css', 'color', 'rgb(51, 51, 51)')
+    .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
+    .and('have.css', 'font-size', '18px');
+};
 
-  function checkPreviousButtonStyles (selector, text) {
-    cy.get(selector).should('be.visible')
-      .and('have.text', text)
-      .and('have.css', 'background-color', 'rgba(0, 0, 0, 0)')
-      .and('have.css', 'width', Cypress.env('device') === 'desktop' ? '432px': '406px')
-      .and('have.css', 'height', '60px')
-      .and('have.css', 'padding', '0px 16px')
-      .and('have.css', 'color', 'rgb(51, 51, 51)')
-      .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
-      .and('have.css', 'font-size', '18px')
-  }
+function checkPreviousButtonStyles(selector, text) {
+  cy.get(selector).should('be.visible')
+    .and('have.text', text)
+    .and('have.css', 'background-color', 'rgba(0, 0, 0, 0)')
+    .and('have.css', 'width', Cypress.env('device') === 'desktop' ? '432px': '406px')
+    .and('have.css', 'height', '60px')
+    .and('have.css', 'padding', '0px 16px')
+    .and('have.css', 'color', 'rgb(51, 51, 51)')
+    .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
+    .and('have.css', 'font-size', '18px');
+};
 
-  function checkSecureDataDisclamer () {
-    const safeUserDataText ='#lastStepButton-container ~ div p';
-    const safeUserDataIcon = '#lastStepButton-container ~ div svg'
-    cy.get(safeUserDataText).should('be.visible')
-      .and('have.text', 'Deine Daten sind bei uns sicher')
-      .and('have.css', 'color', 'rgb(100, 100, 100)')
-      .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
-      .and('have.css', 'font-size', '14px')
-    cy.get(safeUserDataIcon).should('be.visible')
-      .and('have.css', 'width', '24px')
-      .and('have.css', 'height', '20px')
-      .and('have.css', 'border', '0px solid rgb(51, 51, 51)')
-  }
+function checkSecureDataDisclamer() {
+  const safeUserDataText ='#lastStepButton-container ~ div p';
+  const safeUserDataIcon = '#lastStepButton-container ~ div svg';
+  cy.get(safeUserDataText).should('be.visible')
+    .and('have.text', 'Deine Daten sind bei uns sicher')
+    .and('have.css', 'color', 'rgb(100, 100, 100)')
+    .and('have.css', 'font-family', '"Make It Sans", fallback-font, sans-serif')
+    .and('have.css', 'font-size', '14px');
+  cy.get(safeUserDataIcon).should('be.visible')
+    .and('have.css', 'width', '24px')
+    .and('have.css', 'height', '20px')
+    .and('have.css', 'border', '0px solid rgb(51, 51, 51)');
+};
+
+function numberInputsCheck(params, helperInput, testInput){
+  params.forEach((arr) => {
+  cy.get(helperInput).type('Audi').click();
+  cy.get(testInput).should('be.visible')
+    .type(arr.param).then(() => {
+      if(arr.param[0] || arr.param[1]) {
+        cy.get(testInput)
+          .should('be.visible')
+          .and('have.attr', 'value', '');
+        cy.get(testInput).clear();
+        cy.get(helperInput).clear();
+        cy.get(helperInput).click();
+      } else {
+        cy.get(testInput)
+          .should('be.visible')
+          .invoke('attr', 'value').then((value) => {
+            let cleanOutput = value.replace(/'/g, '').toString();
+            expect(cleanOutput).to.contain(arr.param.toString().replace(/['-]/g, ''));
+            cy.get(testInput).clear();
+            cy.get(helperInput).clear();
+            cy.get(helperInput).click();
+        });
+      }
+    });
+  });
+};
+
+const stepper = 'ul.fs24-stepper';
 
 module.exports = {
   // test functions and parameters
@@ -386,6 +431,7 @@ module.exports = {
   checkNextButtonStyles,
   checkPreviousButtonStyles,
   checkSecureDataDisclamer,
+  numberInputsCheck,
   stepperParams,
   labelHeadingsText,
   tooltipsParams,
@@ -393,37 +439,25 @@ module.exports = {
   typeOfUse,
   laguageMenuOptions,
   requiredFieldValidationMessages,
+  inputFieldsCheckParams,
 
   // Stepper test selectors
   stepper,
   stepperSteps: stepper + ' li',
   stepperIcons: stepper + ' li div',
   stepperText: stepper + ' li p',
-  inputForm,
-  hedingText: 'h2:first-child',
-  labelHeadings: inputForm + ' > label',
-  inputFields: inputForm + ' > div > div > input',
-  inputLeftElement: 'div.chakra-input__left-element',
-  radioFields: inputForm + ' > div > div[role=radiogroup] > label',
-  radioFieldLabels: 'span.chakra-radio__label',
-  tooltipsButtons: inputForm + ' button',
-  tooltipsMessages: 'div[id*="tooltip"]',
-  mostCommonAnswerHeadings: 'p.chakra-text:first-child',
-  mostCommonAnswerButtons: 'form > div:nth-child(6) div:nth-child(2) button',
-  typeOfUseCheckboxes: 'div.chakra-form-control:nth-child(7) div.chakra-stack > label div',
-  nextButton: 'div.chakra-stack button:first-of-type',
-  backButton: 'div.chakra-stack button:last-of-type',
-  safeDataMessage: 'p.chakra-text:last-child',
 
   // First auto form selectors 
+  hedingText: 'h2:first-child',
   brandLabel: '#make-label',
-  brandMenuIcon: 'div.fs24-autocomplete-select svg',
+  tooltipsMessages: 'div[id*="tooltip"]',
+  brandMenuIcon: 'input[id=":R5di6l9al6f6:"] ~ div > svg',
   brandInput: 'input[id=":R5di6l9al6f6:"]',
-  brandFromList: 'div[id=":R5di6l9al6f6:-menu"] li:first-child',
+  brandFromListItem: 'div[id=":R5di6l9al6f6:-menu"] li:first-child',
   placeOnMarket: 'form > div:nth-child(2)',
   pomLabel: '#yearMonthInput-label span',
+  pomTooltipButton: '#yearMonthInput-label ~ button',
   pomYearDropDownIcon: 'div[id=":re:"] + div > svg',
-  pomTooltipButton: 'form > div:nth-child(2) button',
   pomFirstRegistrationYearLabel: '#firstRegistrationYear-label',
   pomFirstRegistrationYearDropDown: 'div[id=":re:"]',
   pomFirstRegistrationYearMenu: 'div[id=":re:-menu"]',
@@ -434,12 +468,12 @@ module.exports = {
   pomFirstRegistrationMonthMenu: 'div[id=":rj:-menu"]',
   pomFirstRegistrationMonthMenuItem: 'li[id=":rj:-item-1"]',
   modelAndType: '#vehicleSearchText-label span',
-  matTooltipButton: 'form > div:nth-child(3) button',
+  matTooltipButton: '#vehicleSearchText-label ~ button',
   matInput: '#vehicleSearchText',
   matModel: '#react-autowhatever-1--item-0',
   selectVehicleLabel: '#vehicleSelection-label',
-  selectVehicleInput: 'div.chakra-form-control:nth-of-type(4) label.chakra-radio',
-  selectVehicleInputText: 'div.chakra-form-control:nth-of-type(4) label.chakra-radio span.chakra-radio__label',
+  selectVehicleCheckbox: '#vehicleSelection-label ~ div label',
+  selectVehicleCheckboxText: 'div.chakra-form-control:nth-of-type(4) label.chakra-radio span.chakra-radio__label',
   currentMilageLabel: '#mileage-label',
   currentMilageInput: '#mileage',
   currentMilageRightText: '#mileage-label + div div.chakra-input__right-element',

@@ -2,7 +2,7 @@ import inquiry from '../../locators/inquiry';
 
 describe('Auto form stepper state checks', () => {
   beforeEach(() => {
-    cy.visit('');
+    cy.visit('/inquiry');
   });
 
   it('Verify auto form initial stepper state', () => {

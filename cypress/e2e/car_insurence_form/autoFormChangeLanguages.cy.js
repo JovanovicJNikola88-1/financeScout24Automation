@@ -1,20 +1,20 @@
-import inquiry, { mobileLanguageState } from "../../locators/inquiry";
+import inquiry from "../../locators/inquiry";
 
 describe("Verify auto form language change functionallity", () => {
   beforeEach(() => {
-    cy.visit('')
+    cy.visit('/inquiry');
   })
   it("Verify that user is able to change language", () => {
     if(Cypress.env('device') === 'mobile') {
-      cy.get(inquiry.mobileMainManuIcon).click()
+      cy.get(inquiry.mobileMainManuIcon).click();
     }
     cy.get(inquiry.languageChangeMenuCode)
     .should("be.visible")
     .and("have.text", "DE")
     .click();
     if(Cypress.env('device') === 'mobile') {
-      cy.get(mobileLanguageState).should('be.visible')
-      .and('have.attr', 'open')
+      cy.get(inquiry.mobileLanguageState).should('be.visible')
+      .and('have.attr', 'open');
     }
     cy.get(inquiry.languageManu).should("be.visible");
     cy.get(inquiry.languageManuItems)
@@ -29,22 +29,22 @@ describe("Verify auto form language change functionallity", () => {
           .should("be.visible")
           .and("have.text", inquiry.laguageMenuOptions[index].heading);
         if(Cypress.env('device') === 'mobile') {
-          cy.get(inquiry.mobileMainManuIcon).click()
+          cy.get(inquiry.mobileMainManuIcon).click();
           cy.get(inquiry.languageChangeMenuCode)
             .should("be.visible")
             .and("have.text", inquiry.laguageMenuOptions[index].codeName)
             .click();
-          cy.get(mobileLanguageState).should('be.visible')
-            .and('have.attr', 'open')
+          cy.get(inquiry.mobileLanguageState).should('be.visible')
+            .and('have.attr', 'open');
         } else {
           cy.get(inquiry.languageChangeMenuCode)
           .should("be.visible")
-          .and("have.text", inquiry.laguageMenuOptions[index].codeName)
-        cy.get(inquiry.languageChangeMenuCode).click();
+          .and("have.text", inquiry.laguageMenuOptions[index].codeName);
+          cy.get(inquiry.languageChangeMenuCode).click();
         }
       });
       if(Cypress.env('device') === 'mobile') {
-        cy.get(inquiry.mobileMainManuIcon).click()
+        cy.get(inquiry.mobileMainManuIcon).click();
       }
   })
 });

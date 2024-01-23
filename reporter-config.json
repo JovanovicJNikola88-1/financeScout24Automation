@@ -1,0 +1,16 @@
+
+{
+    "reporterEnabled": "mochawesome, mocha-junit-reporter",
+    "mochaJunitReporterReporterOptions": {
+      "mochaFile": "./reports/junit/test-report.[hash].xml",
+      "testCaseSwitchClassnameAndName": true,
+      "jenkinsMode": true
+    },
+    "mochawesomeReporterOptions": {
+      "reportDir": "./reports/mochawesome",
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "timestamp": true
+    }
+  }
