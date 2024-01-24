@@ -1,4 +1,4 @@
-const host = Cypress.config("baseUrl");
+const host = Cypress.config('baseUrl');
 const vehicleSelectionsAudiA1 =
   host + '/api/webapi/api/v1/' 
 	+ 'vehicle-selections/make/AUDI/vehicle-types?SearchTerm=A1&Month=1'
@@ -10,11 +10,13 @@ const vehicleSelectionMakes =
   `${host}/api/webapi/api/v1/vehicle-selections/AUTO/makes`;
 const lookups =
   `${host}/api/webapi/api/v1/lookups`;
+const vehicleTypes = `${host}/api/webapi/api/v1/vehicle-selections/make/AUDI/vehicle-types`
 
 module.exports = {
   vehicleSelectionsAudiA1,
   homePage,
   carInsurance,
 	vehicleSelectionMakes,
+  vehicleTypes,
 	lookups
 };
