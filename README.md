@@ -12,7 +12,9 @@ Run tests in headed mode
 OR
 > npm run cy:open
 ```
-Run tests in headless mode - this will make screenshots if test fails
+Run tests in headless mode: 
+* this will make screenshots if test fails
+* this will make reports
 ```
 > npx cypress run -b chrome
 OR

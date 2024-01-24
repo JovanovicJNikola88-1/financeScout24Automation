@@ -66,6 +66,7 @@ describe('Pass the first page of the form step successfully', () => {
     inquiry.checkboxCheckedStylesAndText(
             inquiry.selectVehicleCheckbox, 
             inquiry.selectVehicleCheckboxText,
+            inquiry.selectVehicleLabel,
             'AUDI A1 Allstreet 30 TFSI Attraction S-tronic \n 110 PS - CHF 33\'950.⁠—');
             
     // Current mileage input
@@ -91,6 +92,7 @@ describe('Pass the first page of the form step successfully', () => {
     inquiry.checkboxCheckedStylesAndText(
       inquiry.ownVehicleCheckboxYes, 
       inquiry.ownVehicleCheckboxYesText,
+      inquiry.ownVehicleCheckboxLabel,
       'Ja');
     cy.get(inquiry.ownVehicleCheckboxSecondOption).should('be.visible')
       .and('have.css', 'border-color', 'rgb(100, 100, 100)');
@@ -100,6 +102,7 @@ describe('Pass the first page of the form step successfully', () => {
     inquiry.checkboxCheckedStylesAndText(
       inquiry.ownVehicleCheckboxNo, 
       inquiry.ownVehicleCheckboxNoText,
+      inquiry.ownVehicleCheckboxLabel,
       'Nein');
     cy.get(inquiry.ownVehicleCheckboxFirstOption).click();
     inquiry.passIconCheck();
@@ -122,6 +125,7 @@ describe('Pass the first page of the form step successfully', () => {
     inquiry.checkboxCheckedStylesAndText(
       inquiry.leasingVehicleCheckboxYes, 
       inquiry.leasingVehicleYesText,
+      inquiry.leasingVehicleLabel,
       'Ja');
     cy.get(inquiry.leasingVehicleCheckboxSecondOption).should('be.visible')
       .and('have.css', 'border-color', 'rgb(100, 100, 100)');
@@ -131,6 +135,7 @@ describe('Pass the first page of the form step successfully', () => {
     inquiry.checkboxCheckedStylesAndText(
       inquiry.leasingVehicleCheckboxNo, 
       inquiry.leasingVehicleNoText,
+      inquiry.leasingVehicleLabel,
       'Nein');
     inquiry.passIconCheck();
 
@@ -199,21 +204,25 @@ describe('Pass the first page of the form step successfully', () => {
     inquiry.checkboxCheckedStylesAndText(
       inquiry.garageCheckbox1, 
       inquiry.garageCheckboxNoText,
+      inquiry.garageLabel,
       'Nein');
     cy.get(inquiry.garageCheckboxOption2).click();
     inquiry.checkboxCheckedStylesAndText(
       inquiry.garageCheckbox2, 
       inquiry.garageCheckboxYes1Text,
+      inquiry.garageLabel,
       'Ja, zuhause');
     cy.get(inquiry.garageCheckboxOption3).click();
     inquiry.checkboxCheckedStylesAndText(
       inquiry.garageCheckbox3, 
       inquiry.garageCheckboxYes2Text,
+      inquiry.garageLabel,
       'Ja, am Arbeitsplatz');
     cy.get(inquiry.garageCheckboxOption4).click();
     inquiry.checkboxCheckedStylesAndText(
       inquiry.garageCheckbox4, 
       inquiry.garageCheckboxYes3Text,
+      inquiry.garageLabel,
       'Ja, zuhause und am Arbeitsplatz');
     inquiry.passIconCheck();
 

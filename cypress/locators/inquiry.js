@@ -280,8 +280,8 @@ function checkTooltip(tooltipId, messageId, type) {
     });
 };
 
-function checkboxCheckedStylesAndText(checkboxId, textId, expectedText) {
-  cy.get('body').invoke('show').click({force: true}) // click on side, so cypress can reach border values
+function checkboxCheckedStylesAndText(checkboxId, textId, labelId, expectedText) {
+  cy.get(labelId).click() // click on side, so cypress can reach border values
   cy.get(checkboxId)
     .should('be.visible')
     .and('have.css', 'background-color', 'rgb(241, 252, 255)')
