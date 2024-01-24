@@ -441,6 +441,8 @@ module.exports = {
   requiredFieldValidationMessages,
   inputFieldsCheckParams,
 
+  acceptTermsButton: '#onetrust-accept-btn-handler',
+
   // Stepper test selectors
   stepper,
   stepperSteps: stepper + ' li',

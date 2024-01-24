@@ -1,6 +1,6 @@
 import './commands'
 
-// This could be a solution for the bypassing cookies popup modal
+// Bypassing cookies popup modal
 beforeEach(() => {
     const currentDate = new Date(Date.now());
     const monthNames = [
