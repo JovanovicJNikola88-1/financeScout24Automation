@@ -8,19 +8,16 @@ Install dev dependenices
 ```
 Run tests in headed mode
 ```
-> npx cypress open
-OR
 > npm run cy:open
 ```
 Run tests in headless mode: 
 * this will make screenshots if test fails
 * this will make reports
 ```
-> npx cypress run -b chrome
-OR
 > npm run cy:tests
 ```
-Choose the device option (desktop/mobile)
+In order to change device edit following: <br>
+Device options are desktop(default) and mobile
 ```
 cypress.config.js --> env --> device
 ```

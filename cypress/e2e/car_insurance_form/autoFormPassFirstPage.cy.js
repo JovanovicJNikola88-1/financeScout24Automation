@@ -13,9 +13,9 @@ describe('Pass the first page of the form step successfully', () => {
   });
   })
   beforeEach(() => {
-    cy.clearCookies()
+    cy.clearCookies();
     cy.visit('/inquiry');
-    cy.get(inquiry.acceptTermsButton, {setTimeout: 10000}).click()
+    cy.get(inquiry.acceptTermsButton, { timeout: 10000 }).click()
   });
   
 	it('Verify that user can pass the first form page', () => {

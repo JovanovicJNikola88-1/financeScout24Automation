@@ -17,15 +17,6 @@ module.exports = defineConfig({
     configFile: 'reporter-config.json',
   },
   screenshotsFolder: 'reports/mochawesome/screenshots/desktop',
-  blockHosts: [
-    '*.yahoo.com',
-    '*.adform.net',
-    '*.optimizely.com',
-    '*.demdex.net',
-    '*.snapchat.com',
-    '*.tiqcdn.com',
-    '*.tealiumiq.com',
-  ],
   e2e: {
     setupNodeEvents: setConfig,
   },
