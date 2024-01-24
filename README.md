@@ -9,10 +9,14 @@ Install dev dependenices
 Run tests in headed mode
 ```
 > npx cypress open
+OR
+> npm run cy:open
 ```
 Run tests in headless mode - this will make screenshots if test fails
 ```
 > npx cypress run -b chrome
+OR
+> npm run cy:tests
 ```
 Choose the device option (desktop/mobile)
 ```
